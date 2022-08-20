@@ -930,7 +930,7 @@ footer .copy {
     .services .title::after,
     .portfolio .title::after,
     .contact .title::after  {
-        font-size: 12px;
+        font-size: 10px;
     }
 
 
