@@ -2,9 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
 
-/* color: #a600c4; */
-/* color: #a600c4; */
-
 * {
     margin: 0;
     padding: 0;
@@ -27,9 +24,6 @@ html {
     height: 80%;
 }
 
-
-
-
 /*  menu início*/
 .navbar {
     text-transform: uppercase;
@@ -42,7 +36,7 @@ html {
 }
 
 .navbar.sticky {
-    background: #000;
+    background: #1B1920;
     padding: 10px 0;
 }
 
@@ -62,7 +56,6 @@ html {
     font-size: 18px;
     margin-left: 25px;
     transition: color 0.3s ease;
-    
 }
 
 .navbar .menu li a:hover {
@@ -193,7 +186,6 @@ html {
     bottom: 30px;
     opacity: 1;
     pointer-events: auto;
-
 }
 
 /* códigos gerais  */
@@ -210,17 +202,6 @@ section .title {
     position: relative;
 }
 
-/* section .title::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    width: 250px;
-    height: 3px;
-    background: #111;
-    transform: translateX(-50%);
-} */
-
 section .title::after {
     position: absolute;
     bottom: -12px;
@@ -234,31 +215,27 @@ section .title::after {
 
 .about,
 .services,
-.skills,
-.teams,
+.benefits,
+.portfolio,
 .contact,
-footer {
+.footer {
     font-family: 'Roboto', sans-serif;
 }
 
 .about .about-content,
 .services .serv-content,
-.skills .skills-content,
+.portfolio .port-content,
 .contact .contact-content {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 30px;
 }
 
 /*  section Sobre  */
-
 .about .title::after {
     content: "-Quem sou eu-";
-}
-
-.about-content {
-    padding-bottom: 30px;
 }
 
 .about .about-content .left {
@@ -308,27 +285,22 @@ footer {
 }
 
 /*  serction Soluções */
-.services,
-.teams {
-    background: #111;
+.services {
+    background: #1B1920;
     color: #fff;
 }
 
-.services .title::before,
-.teams .title::before {
+.services .title::before {
     background: #fff;
 }
 
-.services .title::after,
-.teams .title::after {
-    background: #111;
+.services .title::after {
+    background: #1B1920;
     content: "-Que oferecemos-";
-    /* width: 55%; */
 }
 
 .serv-content {
     row-gap: 30px;
-    padding-bottom: 40px;
 }
 
 .services .serv-content .card {
@@ -342,31 +314,40 @@ footer {
     box-shadow: 0 2px 0 #a600c4;
 }
 
-.serv-content .card i {
-    font-size: 50px;
+.card span {
+    color:#a600c4;
+}
+
+
+.card .icon--serv {
+    width: 70px;
+    height: 70px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 45px;
     color: #a600c4;
-}
-
-.card:hover i {
-    color: #000;
-    font-size: 40px;
-}
-
-.card .icon--mail {
-    background-color: transparent;
+    border-radius: 50%;
+    outline: 2px solid transparent;
+    transition-property:
+        outline-offset, outline-color,
+        background-color;
+    transition-duration: .25s;
+    outline-offset: 4px;
     outline-color: #a600c4;
 }
 
-.card:hover .icon--mail {
+.card:hover .icon--serv {
     background-color: #a600c4;
     outline-color: #a600c4;
-    color: #000;
-    outline-offset: 4px;
+    outline-offset: 5px;
+    color:#1B1920;
 }
 
 .card .icon {
-    width: 80px;
-    height: 80px;
+    width: 75px;
+    height: 75px;
 }
 
 .card:hover i {
@@ -392,37 +373,20 @@ footer {
     transform: scale(1.05);
 }
 
-.services .serv-content .card ion-icon {
-    font-size: 70px;
-    color: #a600c4;
-}
-
-.services .serv-content .card:hover ion-icon {
-    color: #fff;
-}
-
-.services .serv-content .card .text {
-    font-size: 25px;
-    margin: 10px 0 7px 0;
-}
-
 /* beneficios */
 .benefits {
     padding: 0px;
-    /* margin: 0; */
-    margin-top: 110px;
     max-width: 100vw;
     background-color: #a600c4;
 }
 .benefit {
-    padding: 20px 0;
     display: flex;
     flex-wrap: wrap;
     column-gap: 30px;
     justify-content: center;
 }
 
-.benefit .card {
+.benefit .card-benefit {
     width: 165px;
     display: flex;
     flex-direction: column;
@@ -432,7 +396,7 @@ footer {
     padding: 20px 0;
 }
 
-.benefit .card .iconb {
+.benefit .card-benefit .iconb {
     color:#fff;
     font-size: 25px;
     width: 35px;
@@ -447,11 +411,10 @@ footer {
         outline-offset, outline-color,
         background-color;
     transition-duration: .25s;
-    text-shadow: 0 2px 5px #111;
+    text-shadow: 0 2px 5px #1B1920;
 }
 
-
-.card:hover i {
+.card-benefit:hover i {
     animation: shake .25s;
     font-size: 28px;
     cursor: default;
@@ -459,37 +422,28 @@ footer {
     
 }
 
-
-.benefit .card h3 {
+.benefit .card-benefit h3 {
     font-size: 14px;
     margin-bottom: 5px;
     color:#fff;
     font-weight: 500;
-    text-shadow: 0 2px 5px #111;
+    text-shadow: 0 2px 5px #1B1920;
 }
 
-.benefit .card p {
+.benefit .card-benefit p {
     font-size: 12px;
     text-align: center;
     color:#fff;
-    text-shadow: 0 2px 5px #111;
+    text-shadow: 0 2px 5px #1B1920;
 }
-
-
 
 /* section Portfólio */
 .portfolio .title::after {
     content: "-Nossos trabalhos-";
-    /* width: 70%; */
 }
 
 .port-content {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    row-gap: 30px;
 }
 
 .port-content .itens {
@@ -502,7 +456,6 @@ footer {
 }
 
 .filter {
-    /*essa*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -520,32 +473,28 @@ footer {
     text-transform: uppercase;
     row-gap: 20px;
     box-shadow: 0px 1px 3px #555;
+    margin-bottom: 30px;
 }
 
 .filter li.active {
-    /*essa*/
     color: #555;
 }
 
 .item:hover {
-    /*essa*/
     color: #555;
     cursor: pointer;
 }
 
 .itens .item {
-    /*essa*/
     list-style: none;
 }
 
 .content--portfolio-photo-site-area a {
-    /*essa*/
     width: 350px;
     height: 230px;
 }
 
 .content--portfolio-photo-site-area img {
-    /*essa*/
     width: inherit;
     height: inherit;
     border-radius: 5px;
@@ -554,12 +503,11 @@ footer {
 }
 
 .content--portfolio-photo-info {
-    /*essa*/
     margin-top: 140px;
     margin-left: 25px;
     position: absolute;
     background-color: rgba(166, 0, 196, 1);
-    box-shadow: 0px 0px 3px #111;
+    box-shadow: 0px 0px 3px #1B1920;
     width: 300px;
     height: 80px;
     display: flex;
@@ -573,184 +521,26 @@ footer {
 }
 
 a .content--portfolio-photo-info h5 {
-    /*essa*/
     font-size: 18px;
     font-weight: 600;
     text-transform: uppercase;
     color: #fff;
     margin-bottom: 10px;
-    text-shadow: 0px 0px 5px #111;
+    text-shadow: 0px 0px 5px #1B1920;
 }
 
 a .content--portfolio-photo-info p {
-    text-shadow: 0px 0px 5px #111;
+    text-shadow: 0px 0px 5px #1B1920;
 }
 
 .content--portfolio-photo-site-area:hover .content--portfolio-photo-info {
-    /*essa*/
     opacity: 1;
 }
 
-/*  sessão especialidades: foi retirada do projeto  */
-/* .skills .title::after {
-    content: "Que faço";
-}
-
-.skills .skills-content .column {
-    width: calc(50% - 30px);
-}
-
-.skills .skills-content .left .text {
-    font-size: 25px;
-    margin-bottom: 10px;
-}
-
-.skills .skills-content .left p {
-    text-align: justify;
-}
-
-.skills .skills-content .left a {
-    display: inline-block;
-    background: #a600c4;
-    color: #fff;
-    font-size: 18px;
-    padding: 8px 16px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid #a600c4;
-    transition: all 0.3s ease;
-}
-
-.skills .skills-content .left a:hover {
-    color: #a600c4;
-    background: none;
-}
-
-.skills .skills-content .right .bars {
-    margin-bottom: 15px;
-}
-
-.skills .skills-content .right .info {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.skills .skills-content .right span {
-    font-size: 18px;
-}
-
-.skills .skills-content .right .line {
-    width: 100%;
-    height: 5px;
-    background: #ccc;
-    position: relative;
-}
-
-.skills .skills-content .right .line::before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background: #a600c4;
-}
-
-.skills .skills-content .right .html::before {
-    width: 93%;
-}
-
-.skills .skills-content .right .css::before {
-    width: 85%;
-}
-
-.skills .skills-content .right .js::before {
-    width: 87%;
-}
-
-.skills .skills-content .right .php::before {
-    width: 47%;
-}
-
-.skills .skills-content .right .mysql::before {
-    width: 42%;
-} */
-
-/*  sessão equipe: foi retirada do projeto  */
-/* .teams .title::after {
-    content: "Especializada";
-}
-
-.teams .carousel .card {
-    background: #222;
-    border-radius: 6px;
-    padding: 25px 35px;
-    text-align: center;
-    transition: all 0.3s ease;
-}
-
-.teams .carousel .card:hover {
-    background: #a600c4;
-}
-
-.teams .carousel .card img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid #a600c4;
-    transition: all 0.3s ease;
-}
-
-.teams .carousel .card:hover img {
-    border-color: #fff;
-}
-
-.teams .carousel .card .box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-}
-
-.teams .carousel .card:hover .box {
-    transform: scale(1.05);
-}
-
-.teams .carousel .card .text {
-    font-size: 25px;
-    margin: 10px 0 7px 0;
-}
-
-.owl-dots {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.owl-dot {
-    width: 14px;
-    height: 14px;
-    outline: none !important;
-    border-radius: 50%;
-    border: 2px solid #a600c4 !important;
-    transition: all 0.3s ease;
-}
-
-.owl-dot.active {
-    width: 35px;
-    border-radius: 15px;
-}
-
-.owl-dot.active,
-.owl-dot:hover {
-    background: #a600c4 !important;
-} */
 
 /*  section Contato  */
 .contact .title::after {
     content: "-Fale conosco-";
-    /* width: 70%; */
 }
 
 .contact .contact-content .column {
@@ -858,7 +648,7 @@ a .content--portfolio-photo-info p {
 
 /*  section footer  */
 footer {
-    background: #111;
+    background: #1B1920;
     padding: 20px 0 0px 0;
     color: #fff;
     text-align: center;
@@ -873,10 +663,6 @@ footer span a {
     text-decoration: none;
     margin: 20px 0;
 }
-
-/* footer span a:hover {
-    color: #285AEB;
-} */
 
 footer .copy {
     margin: 20px 0 30px 0;
@@ -898,7 +684,7 @@ footer .copy {
     justify-content: center;
     text-decoration: none;
     font-size: 22px;
-    color: #000;
+    color: #1B1920;
     background-color: #a600c4;
     border-radius: 50%;
     outline: 2px solid transparent;
@@ -910,10 +696,6 @@ footer .copy {
     outline-color: #a600c4;
     
 }
-
-/* .icon:hover {
-    outline-offset: 4px;
-} */
 
 .icon:hover i {
     animation: shake .25s;    
@@ -958,8 +740,6 @@ footer .copy {
     }
 }
 /* fim mediasocial */
-
-
 
 /*  responsividade  */
 @media (max-width: 1300px) {
@@ -1007,7 +787,7 @@ footer .copy {
         height: 100vh;
         left: -100%;
         top: 0;
-        background: #111;
+        background: #1B1920;
         padding-top: 80px;
         text-align: center;
         transition: all 0.3s ease;
@@ -1081,7 +861,7 @@ footer .copy {
 
 @media (max-width:799px) {
     .home {
-        background-color: #000;
+        background-color: #1B1920;
     }
 
     .home-bird.bird {
@@ -1193,4 +973,21 @@ footer .copy {
     }
 }
 
+/* ::-webkit-scrollbar {
+    background-color: #a600c4;
+} */
+
+body::-webkit-scrollbar {
+    width: 12px; /*largura do scroll*/
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #1B1920; /* cor do background */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #a600c4; /* cor do thumb */
+    border-radius: 20px;
+    border: 3px solid #1B1920;
+  }
 
