@@ -18,6 +18,16 @@ html {
     padding: 0 80px;
     margin: auto;
 }
+
+.about .max-width .title,
+.contact .max-width .title {
+    color: #1B1E25;
+}
+
+.max-width .title {
+    color: #fff;
+}
+
 /* logo svg */
 .logo_svg {
     width: 100px;
@@ -36,9 +46,11 @@ html {
 }
 
 .navbar.sticky {
-    background: #000;
+    background: url('./assets/images/glenn-carstens-peters-P1qyEf1g0HU-unsplash.jpg') no-repeat;
+    background-size: cover;
+    /* background: #1b1e25; */
     padding: 10px 0;
-    box-shadow: 0 0 5px #AABCD0;
+    /* box-shadow: 0 0 5px #AABCD0; */
 }
 
 .navbar .max-width {
@@ -60,17 +72,17 @@ html {
 }
 
 .navbar .menu li a:hover {
-    color: #AABCD0;
+    color: #2FD46C;
 }
 
 .navbar.sticky .menu li a:hover {
-    color: #AABCD0;
+    color: #2FD46C;
 }
 
 /* Home Page */
 .home {
     display: flex;
-    background: url('./assets/images/home/matthieu-joannon-QoX88h9Pzpw-unsplash.jpg') no-repeat;
+    background: url('./assets/images/glenn-carstens-peters-P1qyEf1g0HU-unsplash.jpg') no-repeat;
     background-size: cover;
     height: 100vh;
     color: #fff;
@@ -93,7 +105,7 @@ html {
 .home .home-content .text-2 {
     font-size: 50px;
     margin-bottom: 30px;
-    text-shadow: 0px 0px 15px #AABCD0;
+    text-shadow: 0px 0px 5px #2FD46C;
     font-family: 'Major Mono Display', monospace;
 }
 
@@ -105,22 +117,22 @@ html {
 }
 
 .home .home-content .text-3 span {
-    color: #AABCD0;
+    color: #2FD46C;
 }
 
 .home .home-content a {
     display: inline-block;
-    background: #131E2F;
+    background: #2FD46C;
     color: #fff;
     font-size: 25px;
     padding: 12px 36px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 1px solid #131E2F;
+    border: 1px solid #2FD46C;
 }
 
 .home .home-content a:hover {
-    color: #131E2F;
+    color: #2FD46C;
     background: none;
 }
 
@@ -141,7 +153,7 @@ html {
 .home-bird a {
     text-transform: uppercase;
     text-decoration: none;
-    color: #AABCD0;
+    color: #2FD46C;
     position: relative;
     display: block;
 
@@ -173,7 +185,7 @@ html {
     text-align: center;
     line-height: 50px;
     color: #fff;
-    background: #131E2F;
+    background: #2FD46C;
     border-radius: 6px;
     font-size: 30px;
     z-index: 248;
@@ -201,12 +213,7 @@ section .title {
     margin-bottom: 60px;
     padding-bottom: 20px;
     position: relative;
-    color: #AABCD0;
-}
-
-.max-width .title {
-    color: #131E2F;
-    text-shadow: 0 0 2px #AABCD0;
+    color: #2FD46C;
 }
 
 section .title::after {
@@ -215,7 +222,7 @@ section .title::after {
     left: 50%;
     font-size: 16px;
     background: transparent ;
-    color: #AABCD0;
+    color: #2FD46C;
     padding: 5px;
     transform: translateX(-50%);
 }
@@ -256,11 +263,11 @@ section .title::after {
 .about .about-content .right .text {
     font-size: 25px;
     margin-bottom: 10px;
-    color: #AABCD0
+    color: #2FD46C
 }
 
 .about .about-content .right .text span {
-    color: #131E2F;
+    color: #1B1E25;
 }
 
 .about .about-content .right p {
@@ -270,18 +277,18 @@ section .title::after {
 
 .about .about-content .right a, .port-content .more-port {
     display: inline-block;
-    background: #131E2F;
+    background: #2FD46C;
     color: #fff;
     font-size: 20px;
     padding: 10px 30px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid #131E2F;
+    border: 2px solid #2FD46C;
     transition: all 0.3s ease;
 }
 
 .about .about-content .right a:hover, .port-content .more-port:hover {
-    color: #131E2F;
+    color: rgb(47, 212, 108);
     background: none;
 }
 
@@ -294,8 +301,9 @@ section .title::after {
 
 /*  serction Soluções */
 .services {
-    background: linear-gradient(to top, rgba(170, 188, 208, 01), rgba(19, 30, 47, 1));
-    /* background: #131E2F; */
+    
+    background: linear-gradient(to left, rgba(143, 163, 162, 01), rgba(27, 30, 37, 1));
+    /* background: rgb(27, 30, 37); */
     color: #fff;
 }
 
@@ -314,17 +322,17 @@ section .title::after {
 
 .services .serv-content .card {
     width: calc(33% - 30px);
-    background-image: linear-gradient(to top, rgba(170, 188, 208, 0.3), rgba(19, 30, 47, 1));
+    background-image: linear-gradient(to top, rgba(27, 30, 37, 1), rgba(47, 212, 108, 1));
     text-align: center;
     border-radius: 6px;
     padding: 30px 20px;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 2px 0 #131E2F;
+    box-shadow: 0 2px 0 #1B1E25;
 }
 
 .card span {
-    color:#131E2F;
+    color:#2FD46C;
 }
 
 
@@ -336,7 +344,7 @@ section .title::after {
     justify-content: center;
     text-decoration: none;
     font-size: 45px;
-    color: #AABCD0;
+    color: #fff;
     border-radius: 50%;
     outline: 2px solid transparent;
     transition-property:
@@ -344,14 +352,14 @@ section .title::after {
         background-color;
     transition-duration: .25s;
     outline-offset: 4px;
-    outline-color: #AABCD0;
+    outline-color: #fff;
 }
 
 .card:hover .icon--serv {
-    background-color: #131E2F;
-    outline-color: #AABCD0;
+    background-color: #1B1E25;
+    outline-color: #1B1E25;
     outline-offset: 5px;
-    color:#AABCD0;
+    color:#2FD46C;
 }
 
 .card .icon {
@@ -368,12 +376,12 @@ section .title::after {
     font-weight: 500;
     text-transform: uppercase;
     margin: 38px 0 27px 0;
-    color: #AABCD0;
+    color: #fff;
 }
 
 .serv-content .card p {
     font-size: 15px;
-    color: #131E2F;
+    color: #fff;
 }
 
 .services .serv-content .card .box {
@@ -388,7 +396,7 @@ section .title::after {
 .benefits {
     padding: 0px;
     max-width: 100vw;
-    background-color: #fff;
+    background-color: #2FD46C;
 }
 .benefit {
     display: flex;
@@ -408,7 +416,7 @@ section .title::after {
 }
 
 .benefit .card-benefit .iconb {
-    color:#131E2F;
+    color:#314C44;
     font-size: 25px;
     width: 35px;
     height: 35px;
@@ -422,30 +430,29 @@ section .title::after {
         outline-offset, outline-color,
         background-color;
     transition-duration: .25s;
-    text-shadow: 0 0px 2px #131E2F;
+    /* text-shadow: 0 0px 1px #fff; */
 }
 
 .card-benefit:hover i {
     animation: shake .25s;
     font-size: 28px;
     cursor: default;
-    color:#131E2F;
     
 }
 
 .benefit .card-benefit h3 {
     font-size: 14px;
     margin-bottom: 5px;
-    color:#131E2F;
+    color:#314C44;
     font-weight: 500;
-    text-shadow: 0 0px 1px #131E2F;
+    text-shadow: 0 0px 1px #314C44;
 }
 
 .benefit .card-benefit p {
     font-size: 12px;
     text-align: center;
-    color:#131E2F;
-    text-shadow: 0 0px 1px #131E2F;
+    color:#314C44;
+    text-shadow: 0 0px 1px #314C44;
 }
 
 /* section Portfólio */
@@ -455,7 +462,7 @@ section .title::after {
 }
 
 .portfolio {
-    background: linear-gradient(to top, rgba(170, 188, 208, 01), rgba(19, 30, 47, 1));
+    background: linear-gradient(to right, rgba(143, 163, 162, 01), rgba(27, 30, 37, 1));
 }
 
 .port-content {
@@ -478,17 +485,17 @@ section .title::after {
     flex-wrap: wrap;
     list-style: none;
     column-gap: 30px;
-    border: 1px solid #AABCD0;
-    background-color: #131E2F;
+    border: 1px solid #2FD46C;
+    background-color: rgb(47, 212, 108);
     border-radius: 10px;
     height: 47px;
     padding: 0 20px;
-    color: #AABCD0;
+    color: #1B1E25;
     font-size: 15px;
     font-weight: 500;
     text-transform: uppercase;
     row-gap: 20px;
-    box-shadow: 0px 1px 3px #000;
+    box-shadow: 0px 1px 3px #1B1E25;
     margin-bottom: 30px;
 }
 
@@ -514,7 +521,7 @@ section .title::after {
     width: inherit;
     height: inherit;
     border-radius: 5px;
-    box-shadow: 0px 5px 3px rgba(19, 30, 47, 0.8);
+    box-shadow: 0px 5px 3px rgba(27, 30, 37, 0.8);
 
 }
 
@@ -522,15 +529,15 @@ section .title::after {
     margin-top: 140px;
     margin-left: 25px;
     position: absolute;
-    background-color: rgba(19, 30, 47, 1);
-    box-shadow: 0px 0px 3px #131E2F;
+    background-color: rgba(47, 212, 108, 1);
+    box-shadow: 0px 0px 3px rgb(27, 30, 37);
     width: 300px;
     height: 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #AABCD0;
+    color: #fff;
     border-radius: 5px;
     opacity: 0;
     transition: all 1s ease;
@@ -540,9 +547,9 @@ a .content--portfolio-photo-info h5 {
     font-size: 18px;
     font-weight: 600;
     text-transform: uppercase;
-    color: #AABCD0;
+    color: #fff;
     margin-bottom: 10px;
-    text-shadow: 0px 0px 5px #131E2F;
+    text-shadow: 0px 0px 5px #1B1E25;
 }
 
 a .content--portfolio-photo-info p {
@@ -559,9 +566,9 @@ a .content--portfolio-photo-info p {
     content: "-Fale conosco-";
 }
 
-.contact {
+/* .contact {
     background: linear-gradient(to top, rgba(170, 188, 208, 01), rgba(19, 30, 47, 1));
-}
+} */
 
 .contact .contact-content .column {
     width: calc(50% - 30px);
@@ -595,12 +602,12 @@ a .content--portfolio-photo-info p {
 }
 
 .contact .contact-content .row .info .sub-title {
-    color: #131E2F;
+    color: #314C44;
 }
 
 .contact .contact-content .row ion-icon {
     font-size: 25px;
-    color: #131E2F;
+    color: #2FD46C;
 }
 
 .contact .rigth form .fields {
@@ -618,7 +625,7 @@ a .content--portfolio-photo-info p {
 .contact .rigth form .textarea textarea {
     width: 100%;
     height: 100%;
-    border: 1px solid #ccc;
+    border: 1px solid #2FD46C;
     border-radius: 6px;
     outline: none;
     padding: 0 15px;
@@ -652,9 +659,9 @@ a .content--portfolio-photo-info p {
 .contact .rigth form .button button {
     width: 100%;
     height: 100%;
-    border: 2px solid #131E2F;
-    background: #131E2F;
-    color: #AABCD0;
+    border: 2px solid #2FD46C;
+    background: #2FD46C;
+    color: #fff;
     font-size: 20px;
     border-radius: 6px;
     cursor: pointer;
@@ -662,15 +669,14 @@ a .content--portfolio-photo-info p {
 }
 
 .contact .rigth form .button button:hover {
-    color: #131E2F;
+    color: #2FD46C;
     background: none;
 }
 
 /*  section footer  */
 footer {
-    background: #131E2F;
+    background: linear-gradient(to top, rgba(143, 163, 162, 01), rgba(27, 30, 37, 1));
     padding: 20px 0 0px 0;
-    color: #fff;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -679,14 +685,14 @@ footer {
 
 footer span a {
     display: inline-block;
-    color: #AABCD0;
+    color: #2FD46C;
     text-decoration: none;
     margin: 20px 0;
 }
 
 footer .copy {
     margin: 20px 0 30px 0;
-    color: #AABCD0;
+    color: #fff;
 }
 
 /* social media */
@@ -704,8 +710,8 @@ footer .copy {
     justify-content: center;
     text-decoration: none;
     font-size: 22px;
-    color: #131E2F;
-    background-color: #AABCD0;
+    color: #fff;
+    background-color: #2FD46C;
     border-radius: 50%;
     outline: 2px solid transparent;
     transition-property:
@@ -713,7 +719,7 @@ footer .copy {
         background-color;
     transition-duration: .25s;
     outline-offset: 4px;
-    outline-color: #AABCD0;
+    outline-color: #2FD46C;
     
 }
 
