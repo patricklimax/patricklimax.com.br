@@ -244,7 +244,7 @@ section .title::after {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
 }
 
 /*  section Sobre  */
@@ -281,7 +281,7 @@ section .title::after {
     color: #fff;
     font-size: 20px;
     padding: 10px 30px;
-    margin-top: 20px;
+    margin-top: 40px;
     border-radius: 6px;
     border: 2px solid #2FD46C;
     transition: all 0.3s ease;
@@ -301,7 +301,6 @@ section .title::after {
 
 /*  serction Soluções */
 .services {
-    
     background: linear-gradient(to left, rgba(143, 163, 162, 01), rgba(27, 30, 37, 1));
     /* background: rgb(27, 30, 37); */
     color: #fff;
@@ -1008,12 +1007,12 @@ body::-webkit-scrollbar {
   }
   
   body::-webkit-scrollbar-track {
-    background: #000; /* cor do background */
+    background: #1B1E25; /* cor do background */
   }
   
   body::-webkit-scrollbar-thumb {
-    background-color: #AABCD0; /* cor do thumb */
+    background-color: #2FD46C; /* cor do thumb */
     border-radius: 20px;
-    border: 3px solid #000;
+    border: 3px solid #1B1E25;
   }
 
