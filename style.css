@@ -36,8 +36,9 @@ html {
 }
 
 .navbar.sticky {
-    background: #1B1920;
+    background: #000;
     padding: 10px 0;
+    box-shadow: 0 0 5px #AABCD0;
 }
 
 .navbar .max-width {
@@ -59,11 +60,11 @@ html {
 }
 
 .navbar .menu li a:hover {
-    color: #a600c4;
+    color: #AABCD0;
 }
 
 .navbar.sticky .menu li a:hover {
-    color: #a600c4;
+    color: #AABCD0;
 }
 
 /* Home Page */
@@ -92,7 +93,7 @@ html {
 .home .home-content .text-2 {
     font-size: 50px;
     margin-bottom: 30px;
-    text-shadow: 0px -2px 15px #a600c4;
+    text-shadow: 0px 0px 15px #AABCD0;
     font-family: 'Major Mono Display', monospace;
 }
 
@@ -104,22 +105,22 @@ html {
 }
 
 .home .home-content .text-3 span {
-    color: #a600c4;
+    color: #AABCD0;
 }
 
 .home .home-content a {
     display: inline-block;
-    background: #a600c4;
+    background: #131E2F;
     color: #fff;
     font-size: 25px;
     padding: 12px 36px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 1px solid #a600c4;
+    border: 1px solid #131E2F;
 }
 
 .home .home-content a:hover {
-    color: #a600c4;
+    color: #131E2F;
     background: none;
 }
 
@@ -140,7 +141,7 @@ html {
 .home-bird a {
     text-transform: uppercase;
     text-decoration: none;
-    color: #a600c4;
+    color: #AABCD0;
     position: relative;
     display: block;
 
@@ -172,7 +173,7 @@ html {
     text-align: center;
     line-height: 50px;
     color: #fff;
-    background: #a600c4;
+    background: #131E2F;
     border-radius: 6px;
     font-size: 30px;
     z-index: 248;
@@ -200,6 +201,12 @@ section .title {
     margin-bottom: 60px;
     padding-bottom: 20px;
     position: relative;
+    color: #AABCD0;
+}
+
+.max-width .title {
+    color: #131E2F;
+    text-shadow: 0 0 2px #AABCD0;
 }
 
 section .title::after {
@@ -207,8 +214,8 @@ section .title::after {
     bottom: -12px;
     left: 50%;
     font-size: 16px;
-    background: #fff;
-    color: #a600c4;
+    background: transparent ;
+    color: #AABCD0;
     padding: 5px;
     transform: translateX(-50%);
 }
@@ -249,10 +256,11 @@ section .title::after {
 .about .about-content .right .text {
     font-size: 25px;
     margin-bottom: 10px;
+    color: #AABCD0
 }
 
 .about .about-content .right .text span {
-    color: #a600c4;
+    color: #131E2F;
 }
 
 .about .about-content .right p {
@@ -262,18 +270,18 @@ section .title::after {
 
 .about .about-content .right a, .port-content .more-port {
     display: inline-block;
-    background: #a600c4;
+    background: #131E2F;
     color: #fff;
     font-size: 20px;
     padding: 10px 30px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid #a600c4;
+    border: 2px solid #131E2F;
     transition: all 0.3s ease;
 }
 
 .about .about-content .right a:hover, .port-content .more-port:hover {
-    color: #a600c4;
+    color: #131E2F;
     background: none;
 }
 
@@ -286,7 +294,8 @@ section .title::after {
 
 /*  serction Soluções */
 .services {
-    background: #1B1920;
+    background: linear-gradient(to top, rgba(170, 188, 208, 01), rgba(19, 30, 47, 1));
+    /* background: #131E2F; */
     color: #fff;
 }
 
@@ -295,7 +304,7 @@ section .title::after {
 }
 
 .services .title::after {
-    background: #1B1920;
+    background: transparent;
     content: "-Que oferecemos-";
 }
 
@@ -305,29 +314,29 @@ section .title::after {
 
 .services .serv-content .card {
     width: calc(33% - 30px);
-    background-image: linear-gradient(to top, rgba(17, 17, 17, 0), rgba(0, 0, 0, 1));
+    background-image: linear-gradient(to top, rgba(170, 188, 208, 0.3), rgba(19, 30, 47, 1));
     text-align: center;
     border-radius: 6px;
     padding: 30px 20px;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 2px 0 #a600c4;
+    box-shadow: 0 2px 0 #131E2F;
 }
 
 .card span {
-    color:#a600c4;
+    color:#131E2F;
 }
 
 
 .card .icon--serv {
     width: 70px;
     height: 70px;
-    display: inline-flex;
+    display: inline-flex;   
     align-items: center;
     justify-content: center;
     text-decoration: none;
     font-size: 45px;
-    color: #a600c4;
+    color: #AABCD0;
     border-radius: 50%;
     outline: 2px solid transparent;
     transition-property:
@@ -335,14 +344,14 @@ section .title::after {
         background-color;
     transition-duration: .25s;
     outline-offset: 4px;
-    outline-color: #a600c4;
+    outline-color: #AABCD0;
 }
 
 .card:hover .icon--serv {
-    background-color: #a600c4;
-    outline-color: #a600c4;
+    background-color: #131E2F;
+    outline-color: #AABCD0;
     outline-offset: 5px;
-    color:#1B1920;
+    color:#AABCD0;
 }
 
 .card .icon {
@@ -359,10 +368,12 @@ section .title::after {
     font-weight: 500;
     text-transform: uppercase;
     margin: 38px 0 27px 0;
+    color: #AABCD0;
 }
 
 .serv-content .card p {
     font-size: 15px;
+    color: #131E2F;
 }
 
 .services .serv-content .card .box {
@@ -377,7 +388,7 @@ section .title::after {
 .benefits {
     padding: 0px;
     max-width: 100vw;
-    background-color: #a600c4;
+    background-color: #fff;
 }
 .benefit {
     display: flex;
@@ -397,7 +408,7 @@ section .title::after {
 }
 
 .benefit .card-benefit .iconb {
-    color:#fff;
+    color:#131E2F;
     font-size: 25px;
     width: 35px;
     height: 35px;
@@ -411,35 +422,40 @@ section .title::after {
         outline-offset, outline-color,
         background-color;
     transition-duration: .25s;
-    text-shadow: 0 2px 5px #1B1920;
+    text-shadow: 0 0px 2px #131E2F;
 }
 
 .card-benefit:hover i {
     animation: shake .25s;
     font-size: 28px;
     cursor: default;
-    color:#fff;
+    color:#131E2F;
     
 }
 
 .benefit .card-benefit h3 {
     font-size: 14px;
     margin-bottom: 5px;
-    color:#fff;
+    color:#131E2F;
     font-weight: 500;
-    text-shadow: 0 2px 5px #1B1920;
+    text-shadow: 0 0px 1px #131E2F;
 }
 
 .benefit .card-benefit p {
     font-size: 12px;
     text-align: center;
-    color:#fff;
-    text-shadow: 0 2px 5px #1B1920;
+    color:#131E2F;
+    text-shadow: 0 0px 1px #131E2F;
 }
 
 /* section Portfólio */
 .portfolio .title::after {
     content: "-Nossos trabalhos-";
+    background-color: transparent;
+}
+
+.portfolio {
+    background: linear-gradient(to top, rgba(170, 188, 208, 01), rgba(19, 30, 47, 1));
 }
 
 .port-content {
@@ -462,26 +478,26 @@ section .title::after {
     flex-wrap: wrap;
     list-style: none;
     column-gap: 30px;
-    border: 1px solid #bbb;
-    background-color: #fff;
+    border: 1px solid #AABCD0;
+    background-color: #131E2F;
     border-radius: 10px;
     height: 47px;
     padding: 0 20px;
-    color: rgb(166, 0, 196);
+    color: #AABCD0;
     font-size: 15px;
     font-weight: 500;
     text-transform: uppercase;
     row-gap: 20px;
-    box-shadow: 0px 1px 3px #555;
+    box-shadow: 0px 1px 3px #000;
     margin-bottom: 30px;
 }
 
 .filter li.active {
-    color: #555;
+    color: #fff;
 }
 
 .item:hover {
-    color: #555;
+    color: #fff;
     cursor: pointer;
 }
 
@@ -498,7 +514,7 @@ section .title::after {
     width: inherit;
     height: inherit;
     border-radius: 5px;
-    box-shadow: 0px 5px 3px rgba(166, 0, 196, 0.8);
+    box-shadow: 0px 5px 3px rgba(19, 30, 47, 0.8);
 
 }
 
@@ -506,15 +522,15 @@ section .title::after {
     margin-top: 140px;
     margin-left: 25px;
     position: absolute;
-    background-color: rgba(166, 0, 196, 1);
-    box-shadow: 0px 0px 3px #1B1920;
+    background-color: rgba(19, 30, 47, 1);
+    box-shadow: 0px 0px 3px #131E2F;
     width: 300px;
     height: 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #ddd;
+    color: #AABCD0;
     border-radius: 5px;
     opacity: 0;
     transition: all 1s ease;
@@ -524,13 +540,13 @@ a .content--portfolio-photo-info h5 {
     font-size: 18px;
     font-weight: 600;
     text-transform: uppercase;
-    color: #fff;
+    color: #AABCD0;
     margin-bottom: 10px;
-    text-shadow: 0px 0px 5px #1B1920;
+    text-shadow: 0px 0px 5px #131E2F;
 }
 
 a .content--portfolio-photo-info p {
-    text-shadow: 0px 0px 5px #1B1920;
+    text-shadow: 0px 0px 5px #131E2F;
 }
 
 .content--portfolio-photo-site-area:hover .content--portfolio-photo-info {
@@ -541,6 +557,10 @@ a .content--portfolio-photo-info p {
 /*  section Contato  */
 .contact .title::after {
     content: "-Fale conosco-";
+}
+
+.contact {
+    background: linear-gradient(to top, rgba(170, 188, 208, 01), rgba(19, 30, 47, 1));
 }
 
 .contact .contact-content .column {
@@ -575,12 +595,12 @@ a .content--portfolio-photo-info p {
 }
 
 .contact .contact-content .row .info .sub-title {
-    color: #333;
+    color: #131E2F;
 }
 
 .contact .contact-content .row ion-icon {
     font-size: 25px;
-    color: #a600c4;
+    color: #131E2F;
 }
 
 .contact .rigth form .fields {
@@ -632,9 +652,9 @@ a .content--portfolio-photo-info p {
 .contact .rigth form .button button {
     width: 100%;
     height: 100%;
-    border: 2px solid #a600c4;
-    background: #a600c4;
-    color: #fff;
+    border: 2px solid #131E2F;
+    background: #131E2F;
+    color: #AABCD0;
     font-size: 20px;
     border-radius: 6px;
     cursor: pointer;
@@ -642,13 +662,13 @@ a .content--portfolio-photo-info p {
 }
 
 .contact .rigth form .button button:hover {
-    color: #a600c4;
+    color: #131E2F;
     background: none;
 }
 
 /*  section footer  */
 footer {
-    background: #1B1920;
+    background: #131E2F;
     padding: 20px 0 0px 0;
     color: #fff;
     text-align: center;
@@ -659,14 +679,14 @@ footer {
 
 footer span a {
     display: inline-block;
-    color: #a600c4;
+    color: #AABCD0;
     text-decoration: none;
     margin: 20px 0;
 }
 
 footer .copy {
     margin: 20px 0 30px 0;
-    color: #a600c4;
+    color: #AABCD0;
 }
 
 /* social media */
@@ -684,8 +704,8 @@ footer .copy {
     justify-content: center;
     text-decoration: none;
     font-size: 22px;
-    color: #1B1920;
-    background-color: #a600c4;
+    color: #131E2F;
+    background-color: #AABCD0;
     border-radius: 50%;
     outline: 2px solid transparent;
     transition-property:
@@ -693,7 +713,7 @@ footer .copy {
         background-color;
     transition-duration: .25s;
     outline-offset: 4px;
-    outline-color: #a600c4;
+    outline-color: #AABCD0;
     
 }
 
@@ -778,7 +798,7 @@ footer .copy {
 
     .menu-btn {
         display: block;
-        z-index: a600c4;
+        z-index: 01A5B1;
     }
 
     .navbar .menu {
@@ -787,7 +807,7 @@ footer .copy {
         height: 100vh;
         left: -100%;
         top: 0;
-        background: #1B1920;
+        background: #131E2F;
         padding-top: 80px;
         text-align: center;
         transition: all 0.3s ease;
@@ -861,7 +881,7 @@ footer .copy {
 
 @media (max-width:799px) {
     .home {
-        background-color: #1B1920;
+        background-color: #131E2F;
     }
 
     .home-bird.bird {
@@ -974,7 +994,7 @@ footer .copy {
 }
 
 /* ::-webkit-scrollbar {
-    background-color: #a600c4;
+    background-color: #01A5B1;
 } */
 
 body::-webkit-scrollbar {
@@ -982,12 +1002,12 @@ body::-webkit-scrollbar {
   }
   
   body::-webkit-scrollbar-track {
-    background: #1B1920; /* cor do background */
+    background: #000; /* cor do background */
   }
   
   body::-webkit-scrollbar-thumb {
-    background-color: #a600c4; /* cor do thumb */
+    background-color: #AABCD0; /* cor do thumb */
     border-radius: 20px;
-    border: 3px solid #1B1920;
+    border: 3px solid #000;
   }
 
