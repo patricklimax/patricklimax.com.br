@@ -53,3 +53,51 @@ $(document).ready(function(){
         }
     });
 });
+
+
+window.sr = ScrollReveal({ reset: true });
+
+sr.reveal('.efectAbout', {
+    rotate: {x:100, y:100, z:100},
+    duration:2000
+});
+
+sr.reveal('.servEfect', { 
+    rotate: {x: 0, y: 80, z: 0},
+    duration: 2000
+});
+
+sr.reveal('.benefEfect', {
+    rotate: {x:100, y:0, z:0},
+    duration:2000
+});
+
+sr.reveal('.efectPort', {
+    rotate: {x:100, y:0, z:0},
+    duration:2000
+});
+
+sr.reveal('.efectPort01', {
+    rotate: {x:0, y:180, z:0},
+    duration:2000
+});
+
+sr.reveal('.efectPort02', {
+    rotate: {x:180, y:0, z:0},
+    duration:2000
+});
+
+sr.reveal('.efectPort03', {
+    rotate: {x:0, y:-180, z:0},
+    duration:2000
+});
+
+sr.reveal('.efectLogo', {
+    rotate: {x:0, y:-180, z:0},
+    duration:1000
+});
+
+
+
+
+
