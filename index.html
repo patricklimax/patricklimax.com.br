@@ -419,7 +419,7 @@
                             <ion-icon name="person-outline"></ion-icon>
                             <div class="info">
                                 <div class="head">Email</div>
-                                <div class="sub-title">contato@patricklimax.com.br</div>
+                                <div class="sub-title">contato@fullcode.dev.br</div>
                             </div>
                         </div>
                     </div>
@@ -427,21 +427,22 @@
                 <!--column left-->
                 <div class="column rigth">
                     <div class="text">Mensagem</div>
-                    <form action="#" id="contrate-me">
+                    <form action="https://formsubmit.co/1aa9367930821ce25e860538d817376b" method="POST" id="contrate-me">
                         <div class="fields">
                             <div class="field name">
-                                <input type="text" placeholder="Nome Completo" required>
+                                <input type="text" id="name" name="name" placeholder="Nome Completo" required>
                             </div>
                             <div class="field email">
-                                <input type="text" placeholder="DDD+Número">
+                                <input type="text" id="fone" name="fone" placeholder="DDD+Número">
                             </div>
                         </div>
                         <div class="field">
                             <div class="field">
-                                <input type="text" placeholder="Seu melhor e-mail" required>
+                                <input type="text" id="email" name="email" placeholder="Seu melhor e-mail" required>
                             </div>
                             <div class="field textarea">
-                                <textarea cols="30" rows="10" placeholder="Escreve sua mensagem..." required></textarea>
+                                <textarea cols="30" id="msg" name="msg" rows="10" placeholder="Escreve sua mensagem..." required></textarea>
+                                <input type="hidden" name="_autoresponse" value="Recebemos sua mensagem, em breve retornaremos.">
                             </div>
                             <div class="button">
                                 <button type="submit">Enviar</button>
