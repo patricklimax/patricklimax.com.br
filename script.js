@@ -30,7 +30,7 @@ $(document).ready(function () {
     } else {
       $(".navbar").removeClass("sticky");
     }
-    if (this.scrollY > 500) {
+    if (this.scrollY > 300) {
       $(".scroll-up-btn").addClass("show");
     } else {
       $(".scroll-up-btn").removeClass("show");
@@ -53,10 +53,10 @@ $(document).ready(function () {
     loop: true,
   });
 
-  $(".menu-btn").click(function () {
-    $(".navbar .menu").toggleClass("active");
-    $(".menu-btn i").toggleClass("active");
-  });
+  // $(".menu-btn").click(function () {
+  //   $(".navbar .menu").toggleClass("active");
+  //   $(".menu-btn i").toggleClass("active");
+  // });
   // $('.carousel').owlCarousel({
   //     margin:20,
   //     loop:true,
@@ -81,9 +81,8 @@ $(document).ready(function () {
 
 // ScrollReveal
 window.sr = ScrollReveal({ reset: true });
-
 ScrollReveal().reveal(".efectScroll", {
-  delay: 500,
+  delay: 200,
   rotate: {
     x: 100,
     y: 0,

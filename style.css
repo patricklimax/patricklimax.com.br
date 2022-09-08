@@ -6,7 +6,7 @@
 
     /*animação mousemove home*/
     0% {
-        top: 10px;
+        top: 5px;
     }
 
     100% {
@@ -68,7 +68,7 @@ html {
     height: 100px;
     display: flex;
     justify-content: center;
-    background: url('./assets/images/home/glenn-unsplash.jpg') no-repeat;
+    background: url('./assets/images/home/glenn-unsplash.webp') no-repeat;
     background-size: cover;
     position: fixed;
     z-index: 999;
@@ -86,17 +86,17 @@ html {
 /* logo svg */
 .menuSpace .logo {
     width: 95px;
-    
+
 }
 
 .menuSpace img {
-    width: 75px;
+    width: 60px;
     height: 90%;
     transition: all 0.6s ease;
 }
 
 .menuSpace img:hover {
-    width: 83px;
+    width: 68px;
     height: 78%;
 }
 
@@ -170,7 +170,7 @@ html {
 /* home */
 .home {
     display: flex;
-    background: url('./assets/images/home/glenn-unsplash.jpg') no-repeat;
+    background: url('./assets/images/home/glenn-unsplash.webp') no-repeat;
     background-size: cover;
     height: 100vh;
     min-height: 500px;
@@ -235,7 +235,7 @@ html {
     border: 2px solid var(--greenOne);
     cursor: pointer;
     text-shadow: 0px 2px 2px var(--DarkOne);
-    transition: all 0.5s linear;
+    transition: all 0.3s linear;
 }
 
 .mouse i {
@@ -371,7 +371,7 @@ section .title::after {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 /*  section Sobre  */
@@ -430,16 +430,21 @@ section .title::after {
 }
 
 .serv-content {
-    column-gap: 20px;
-    background-image: url('assets/images/john-schnobrich.jpg');
+    /* column-gap: 10px; */
+    background-image: url('assets/images/services/john-schnobrich.webp');
     background-size: cover;
     background-position: center;
-    /* position: relative; */
-    /* op       acity: .5; */
+    padding: 5px 0;
+    border-radius: 6px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
 }
 
 .services .serv-content .card {
-    width: calc(33% - 30px);
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(2px);
+    width: calc(97%/3);
     text-align: center;
     border-radius: 6px;
     padding: 30px 5px;
@@ -463,8 +468,7 @@ section .title::after {
     font-size: 40px;
     color: #fff;
     text-shadow: 0 2px 3px var(--DarkOne);
-    box-shadow: 0 3px 2px var(--DarkOne),
-                0px 0px 2px #fff;
+    box-shadow: 0 3px 2px grey, 0px -2px 2px grey;
     border-radius: 50%;
     outline: 3px solid transparent;
     transition-property:
@@ -504,13 +508,6 @@ section .title::after {
     text-shadow: 0 2px 3px var(--DarkOne);
 }
 
-/* .services .serv-content .card .box {
-    transition: all 0.3s ease;
-}
-
-.services .serv-content .card:hover .box {
-    transform: scale(1.05);
-} */
 
 /* beneficios */
 .benefits {
@@ -538,19 +535,17 @@ section .title::after {
 
 .benefit .card-benefit .iconb {
     color: var(--DarkOne);
-    font-size: 25px;
-    width: 35px;
-    height: 35px;
-    display: inline-flex;
+    font-size: 28px;
+    display: flex;
     align-items: center;
     justify-content: center;
-    text-decoration: none;
-    border-radius: 50%;
-    outline: 2px solid transparent;
-    transition-property:
+    /* text-decoration: none; */
+    /* border-radius: 50%; */
+    /* outline: 2px solid transparent; */
+    /* transition-property:
         outline-offset, outline-color,
         background-color;
-    transition-duration: .25s;
+    transition-duration: .25s; */
 }
 
 .card-benefit:hover i {
@@ -561,7 +556,7 @@ section .title::after {
 }
 
 .benefit .card-benefit h1 {
-    font-size: 12px;
+    font-size: 14px;
     text-transform: uppercase;
     color: var(--DarkOne);
     font-weight: 500;
@@ -822,11 +817,12 @@ a .content--portfolio-photo-info p {
     .max-width {
         width: 1000px;
     }
+
     .mediaSocial {
         right: 2%;
     }
 }
-    
+
 
 
 @media (max-width: 1100px) {
@@ -891,6 +887,10 @@ a .content--portfolio-photo-info p {
         max-width: 900px;
         padding: 0;
     }
+    
+    /* .scroll-up-btn {
+        left: -30%;
+    } */
 
     .btn--Btn {
         display: none;
@@ -940,10 +940,10 @@ a .content--portfolio-photo-info p {
         flex: 100%;
     }
 
-    .services .serv-content .card {
+    /* .services .serv-content .card {
         width: 270px;
         margin-bottom: 20px;
-    }
+    } */
 
     .serv-content .card p {
         font-size: 12px;
@@ -994,8 +994,8 @@ a .content--portfolio-photo-info p {
     }
 
     .services .serv-content .card {
-        width: 200px;
-        margin-bottom: 20px;
+        width: 30%;
+        /* margin-bottom: 20px; */
     }
 
     /* .mediaSocial {
@@ -1006,6 +1006,10 @@ a .content--portfolio-photo-info p {
 }
 
 @media (max-width: 690px) {
+
+    .header {
+        background: linear-gradient(var(--DarkOne), var(--DarkTwo));
+    }
 
     .services .serv-content .card {
         width: 100%;
@@ -1078,6 +1082,7 @@ a .content--portfolio-photo-info p {
     #hamburger::before {
         width: 30px;
     }
+
     #hamburger::after {
         width: 30px;
     }
@@ -1182,7 +1187,7 @@ a .content--portfolio-photo-info p {
     .about .about-content .right .text {
         font-size: 20px;
     }
-    
+
     .mediaSocial {
         left: -87%;
     }
@@ -1211,4 +1216,56 @@ body::-webkit-scrollbar-thumb {
 
 /* animação ScrollReveal */
 .efectScroll {
-    visibility: hidden;}
+    visibility: hidden;
+}
+
+/* btn-voltar-home */
+.scroll-up-btn {
+    display: inline-flex;
+    justify-content: center;
+    position: fixed;
+    width: 36px;
+    height: 60px;
+    border-radius: 25px;
+    right: 7.8%;
+    bottom: 35px;
+    text-align: center;
+    line-height: 40px;
+    color: var(--greenOne);
+    background: var(--DarkOne)  ;
+    font-size: 25px;
+    z-index: 248;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    box-shadow: 0px 1px 2px #3a3a3a;
+}
+
+
+    /* padding: 10px 5px;
+    width: 36px;
+    height: 60px;
+    border-radius: 25px;
+    position: relative;
+    color: var(--greenOne);
+    font-size: 18px;
+    left: 40%;
+    top: 70%;
+    border: 2px solid var(--greenOne);
+    cursor: pointer;
+    text-shadow: 0px 2px 2px var(--DarkOne);
+    transition: all 0.3s linear; */
+
+.scroll-up-btn .up {
+    position: absolute;
+    animation: mousemove 0.8s infinite ease-in alternate;
+}
+
+.scroll-up-btn.show {
+    bottom: 25px;
+    opacity: 1;
+    pointer-events: auto;
+    
+
+}
