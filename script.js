@@ -25,11 +25,11 @@ btnMobile.addEventListener("touchstart", toggleMenu);
 
 $(document).ready(function () {
   $(window).scroll(function () {
-    if (this.scrollY > 20) {
-      $(".navbar").addClass("sticky");
-    } else {
-      $(".navbar").removeClass("sticky");
-    }
+    // if (this.scrollY > 20) {
+    //   $(".navbar").addClass("sticky");
+    // } else {
+    //   $(".navbar").removeClass("sticky");
+    // }
     if (this.scrollY > 300) {
       $(".scroll-up-btn").addClass("show");
     } else {
