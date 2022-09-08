@@ -821,6 +821,10 @@ a .content--portfolio-photo-info p {
     .mediaSocial {
         right: 2%;
     }
+
+    .scroll-up-btn {
+        left: 95%;
+    }
 }
 
 
@@ -846,6 +850,10 @@ a .content--portfolio-photo-info p {
 
     .mediaSocial {
         right: 3%;
+    }
+
+    .scroll-up-btn {
+        left: 94%;
     }
 
     .content--portfolio-photo-site-area a {
@@ -878,7 +886,10 @@ a .content--portfolio-photo-info p {
     .content--portfolio-photo-site-area a {
         width: 250px;
         height: 180px;
+    }
 
+    .scroll-up-btn {
+        left: 93.6%;
     }
 }
 
@@ -1001,6 +1012,9 @@ a .content--portfolio-photo-info p {
     /* .mediaSocial {
         left: -85%;
     } */
+    .scroll-up-btn {
+        left: 93%;
+    }
 
 
 }
@@ -1116,10 +1130,21 @@ a .content--portfolio-photo-info p {
         font-size: 2.3rem;
     }
 
+    .scroll-up-btn {
+        left: 92.4%;
+    }
+
 }
 
 @media (max-width: 500px) {
 
+    .max-width {
+        width: 100%;
+    }
+
+    .scroll-up-btn {
+        left: 2.5%;
+    }
 
     .home-content--left .text-2 {
         font-size: 1.5rem;
@@ -1266,6 +1291,4 @@ body::-webkit-scrollbar-thumb {
     bottom: 25px;
     opacity: 1;
     pointer-events: auto;
-    
-
 }
