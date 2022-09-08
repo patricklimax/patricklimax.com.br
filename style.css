@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Ubuntu:wght@400;500;700&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
@@ -88,6 +86,7 @@ html {
 /* logo svg */
 .menuSpace .logo {
     width: 95px;
+    
 }
 
 .menuSpace img {
@@ -202,13 +201,14 @@ html {
 .home-content--left .text-2 {
     font-size: 60px;
     color: var(--greenOne);
-    text-shadow: 0px 2px 2px var(--grey);
+    text-shadow: 0px 2px 2px var(--DarkOne);
     font-family: 'Major Mono Display', monospace;
 }
 
 .home-content--left .text-3 {
     text-align: right;
     font-size: 25px;
+    text-shadow: 0px 2px 2px var(--DarkOne);
     font-family: 'Major Mono Display', monospace;
 }
 
@@ -234,20 +234,20 @@ html {
     top: 70%;
     border: 2px solid var(--greenOne);
     cursor: pointer;
-    box-shadow: 0px 0px 2px var(--grey);
+    text-shadow: 0px 2px 2px var(--DarkOne);
     transition: all 0.5s linear;
 }
 
 .mouse i {
     border-radius: 50%;
     position: absolute;
-    animation: mousemove 1s infinite ease-in alternate;
+    animation: mousemove 0.8s infinite ease-in alternate;
 }
 
 .mouse:hover {
     background-color: var(--greenOne);
     color: var(--DarkOne);
-    box-shadow: 0px 0px 5px var(--grey);
+    box-shadow: 0px 0px 8px 8px var(--DarkOne);
 }
 
 .home-content--rigth {
@@ -306,8 +306,6 @@ html {
 .icon:hover i {
     animation: shake .25s;
     font-size: 19px;
-
-
 }
 
 .icon--instagram:hover {
@@ -339,8 +337,8 @@ section {
 section .title {
     font-family: 'Major Mono Display', monospace;
     text-align: center;
-    font-size: 35px;
-    margin-bottom: 40px;
+    font-size: 23px;
+    margin-bottom: 30px;
     padding-bottom: 20px;
     position: relative;
     color: var(--grey);
@@ -350,7 +348,7 @@ section .title::after {
     position: absolute;
     bottom: -12px;
     left: 50%;
-    font-size: 16px;
+    font-size: 14px;
     background: transparent;
     color: var(--greenOne);
     padding: 5px;
@@ -383,6 +381,9 @@ section .title::after {
 
 .about .about-content .left {
     width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .about .about-content .right {
@@ -406,11 +407,12 @@ section .title::after {
 }
 
 .about .about-content .left img {
+    margin-top: 20px;
     width: 350px;
-    height: 350px;
+    height: 380px;
     object-fit: cover;
     border-radius: 50%;
-    box-shadow: 30px -30px 2px 30px var(--greenOne);
+    box-shadow: 8px -12px 0px -2px var(--greenOne);
 }
 
 /*  serction Soluções */
@@ -429,79 +431,86 @@ section .title::after {
 
 .serv-content {
     column-gap: 20px;
+    background-image: url('assets/images/john-schnobrich.jpg');
+    background-size: cover;
+    background-position: center;
+    /* position: relative; */
+    /* op       acity: .5; */
 }
 
 .services .serv-content .card {
     width: calc(33% - 30px);
-    background-image: linear-gradient(to top, var(--DarkTwo), var(--greenOne));
     text-align: center;
     border-radius: 6px;
     padding: 30px 5px;
-    cursor: pointer;
+    cursor: default;
     transition: all 0.3s ease;
-    box-shadow: 0 2px 0 var(--grey);
 }
 
 .card span {
     color: var(--greenOne);
+    text-shadow: 0 2px 3px var(--DarkOne);
 }
 
 
 .card .icon--serv {
-    width: 70px;
-    height: 70px;
+    width: 65px;
+    height: 65px;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    font-size: 45px;
+    font-size: 40px;
     color: #fff;
+    text-shadow: 0 2px 3px var(--DarkOne);
+    box-shadow: 0 3px 2px var(--DarkOne),
+                0px 0px 2px #fff;
     border-radius: 50%;
-    outline: 2px solid transparent;
+    outline: 3px solid transparent;
     transition-property:
         outline-offset, outline-color,
         background-color;
     transition-duration: .25s;
-    outline-offset: 4px;
-    outline-color: #fff;
+    outline-offset: 2px;
 }
 
 .card:hover .icon--serv {
-    background-color: #1B1E25;
-    outline-color: #1B1E25;
+    outline-color: var(--greenOne);
     outline-offset: 5px;
     color: var(--greenOne);
 }
 
 .card .icon {
-    width: 75px;
-    height: 75px;
+    width: 70px;
+    height: 70px;
 }
 
 .card:hover i {
     animation: shake .25s;
 }
 
-.serv-content .card h3 {
-    font-size: 18px;
+.serv-content .card h1 {
+    font-size: 19px;
     font-weight: 500;
     text-transform: uppercase;
     margin: 38px 0 27px 0;
     color: #fff;
+    text-shadow: 0 2px 3px var(--DarkOne);
 }
 
 .serv-content .card p {
-    font-size: 13px;
+    font-size: 14px;
     color: #fff;
+    text-shadow: 0 2px 3px var(--DarkOne);
 }
 
-.services .serv-content .card .box {
+/* .services .serv-content .card .box {
     transition: all 0.3s ease;
 }
 
 .services .serv-content .card:hover .box {
     transform: scale(1.05);
-}
+} */
 
 /* beneficios */
 .benefits {
@@ -551,9 +560,9 @@ section .title::after {
 
 }
 
-.benefit .card-benefit h3 {
-    font-size: 13px;
-    margin-bottom: 5px;
+.benefit .card-benefit h1 {
+    font-size: 12px;
+    text-transform: uppercase;
     color: var(--DarkOne);
     font-weight: 500;
     text-shadow: 0 0px 1px var(--DarkOne);
@@ -603,7 +612,7 @@ section .title::after {
     font-weight: 500;
     text-transform: uppercase;
     row-gap: 20px;
-    box-shadow: 0px 0px 2px var(--grey);
+    box-shadow: 0px 0px 5px #000;
     margin-bottom: 30px;
 }
 
@@ -624,14 +633,14 @@ section .title::after {
 
 .content--portfolio-photo-site-area a {
     width: 320px;
-    height: 220px;
+    height: 200px;
 }
 
-.content--portfolio-photo-site-area img {
-    width: inherit;
-    height: inherit;
+.content--portfolio-photo-site-area a img {
+    width: 320px;
+    height: 200px;
     border-radius: 5px;
-    box-shadow: 1px 1px 3px var(--grey);
+    box-shadow: 0px 0px 5px #535353, 0px 2px 0 var(--greenOne);
 
 }
 
@@ -654,7 +663,7 @@ section .title::after {
     box-shadow: 0px 0px 5px var(--DarkOne);
 }
 
-a .content--portfolio-photo-info h5 {
+a .content--portfolio-photo-info h1 {
     font-size: 18px;
     font-weight: 600;
     text-transform: uppercase;
@@ -669,7 +678,7 @@ a .content--portfolio-photo-info p {
 
 .content--portfolio-photo-site-area:hover .content--portfolio-photo-info {
     opacity: 1;
-    margin-top: 130px;
+    margin-top: 110px;
 }
 
 
@@ -740,7 +749,7 @@ a .content--portfolio-photo-info p {
     outline: none;
     padding: 0 15px;
     font-size: 17px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .contact .rigth form .name {
@@ -773,11 +782,13 @@ a .content--portfolio-photo-info p {
 }
 
 .footer .logo {
-    height:50px;
+    height: 50px;
     /* margin-bottom: 5px; */
 }
-.footer .logo img{
-    width:50px;
+
+.footer .logo img {
+    width: 50px;
+    height: 50px;
     transition: all 0.6s ease;
 
 }
@@ -806,8 +817,20 @@ a .content--portfolio-photo-info p {
 
 
 /*  responsividade  */
-@media (max-width: 1100px) {
+@media (min-width:1101px) and (max-width:1300px) {
+
+    .max-width {
+        width: 1000px;
+    }
+    .mediaSocial {
+        right: 2%;
+    }
+}
     
+
+
+@media (max-width: 1100px) {
+
     .navbar .max-width {
         margin-left: 0;
     }
@@ -816,17 +839,17 @@ a .content--portfolio-photo-info p {
         padding: 100px 50px 50px 50px;
     }
 
-    .about .about-content .left img {
+    /* .about .about-content .left img {
         width: 300px;
         height: 300px;
-    }
+    } */
 
     .benefits .card-benefit {
         width: 13%;
     }
 
     .mediaSocial {
-        right: 5px;
+        right: 3%;
     }
 
     .content--portfolio-photo-site-area a {
@@ -837,343 +860,355 @@ a .content--portfolio-photo-info p {
 }
 
 
-    @media (max-width: 990px) {
-        
-        .navbar .max-width {
-            padding: 0 50px;
-        }
+@media (max-width: 990px) {
 
-        .home-content--left .text-2 {
-            font-size: 2.5rem;
-        }
-
-        .about .about-content .left img {
-            width: 250px;
-            height: 250px;
-            box-shadow: 15px -15px 2px 5px var(--greenOne);
-        }
-
-        .benefits .card-benefit {
-            width: 25%;
-        }
-
-        .content--portfolio-photo-site-area a {
-            width: 250px;
-            height: 180px;
-
-        }
+    .navbar .max-width {
+        padding: 0 50px;
     }
 
-    @media (max-width: 950px) {
-            .max-width {
-                max-width: 900px;
-                padding: 0;
-            }
-
-            .btn--Btn {
-                display: none;
-            }
-
-            .menu-btn {
-                display: block;
-                z-index: 01A5B1;
-            }
-
-            .navbar .menu {
-                position: fixed;
-                width: 100%;
-                height: 100vh;
-                left: -100%;
-                top: 0;
-                padding-top: 80px;
-                text-align: center;
-                transition: all 0.3s ease;
-            }
-
-            .navbar .menu.active {
-                left: 0;
-            }
-
-            .navbar .menu li {
-                display: block;
-            }
-
-            .navbar .menu li a {
-                display: inline-block;
-                margin: 20px 0;
-                font-size: 25px;
-            }
-
-            .about .about-content .column {
-                width: 50%;
-            }
-
-            .about .about-content .left {
-                display: flex;
-                justify-content: center;
-                margin: 0 auto 60px;
-            }
-
-            .about .about-content .right {
-                flex: 100%;
-            }
-
-            .services .serv-content .card {
-                width: 270px;
-                margin-bottom: 20px;
-            }
-
-            .serv-content .card p {
-                font-size: 12px;
-
-            }
-
-            .contact .contact-content .column {
-                width: 100%;
-                margin-bottom: 35px;
-            }
-
-            .content--portfolio-photo-site-area a {
-                width: 220px;
-                height: 160px;
-            }
-
-            .contact {
-                padding-bottom: 130px;
-            }
-        }
-
-        @media (max-width:799px) {
-
-            .btn--Btn {
-                display: none;
-            }
-
-            .about .title::after,
-            .services .title::after,
-            .portfolio .title::after,
-            .contact .title::after {
-                width: 70vw;
-            }
-
-
-
-            .port-content .filter {
-                width: 100%;
-                height: 50px;
-                column-gap: 8px;
-                row-gap: 8px;
-                padding: 10px;
-            }
-
-            .content--portfolio-photo-site-area a {
-                width: 300px;
-                height: 200px;
-            }
-
-            .services .serv-content .card {
-                width: 200px;
-                margin-bottom: 20px;
-            }
-
-
-        }
-
-        @media (max-width: 690px) {
-
-            .services .serv-content .card {
-                width: 100%;
-                margin-bottom: 20px;
-            }
-
-            .content--portfolio-photo-site-area a {
-                width: 250px;
-                height: 170px;
-            }
-
-            .btn--Btn {
-                display: none;
-            }
-
-            .mediaSocial {
-                right: 0;
-            }
-
-            .about .about-content .left img {
-                width: 80%;
-                height: 50%;
-            }
-
-
-            .menu {
-                display: block;
-                position: absolute;
-                width: 100%;
-                top: 100px;
-                right: 0px;
-                background: linear-gradient(to right, var(--DarkOne), var(--greenOne));
-                transition: 0.6s;
-                z-index: 99000;
-                height: 0px;
-                visibility: hidden;
-                overflow-y: hidden;
-            }
-
-            #nav.active #menu {
-                height: calc(100vh - 100px);
-                visibility: visible;
-                overflow-y: auto;
-            }
-
-            .menu a {
-                padding: 1rem 0;
-                margin: 0 1rem;
-                /* border-bottom: 2px solid rgba(0, 0, 0, 0.05); */
-            }
-
-            #btn-mobile {
-                display: flex;
-                padding: 0.5rem 1rem;
-                font-size: 1rem;
-                border: none;
-                background: none;
-                cursor: pointer;
-                gap: 0.5rem;
-            }
-
-            #hamburger {
-                border-top: 2px solid;
-                width: 20px;
-            }
-
-            #hamburger::after,
-            #hamburger::before {
-                content: '';
-                display: block;
-                width: 20px;
-                height: 2px;
-                background: currentColor;
-                margin-top: 5px;
-                transition: 0.3s;
-                position: relative;
-            }
-
-            #nav.active #hamburger {
-                border-top-color: transparent;
-            }
-
-            #nav.active #hamburger::before {
-                transform: rotate(135deg);
-            }
-
-            #nav.active #hamburger::after {
-                transform: rotate(-135deg);
-                top: -7px;
-            }
-
-            .home-content--left .text-2 {
-                font-size: 2.3rem;
-            }
-
-
-        }
-
-        @media (max-width: 500px) {
-
-
-            .home-content--left .text-2 {
-                font-size: 1.5rem;
-            }
-
-            .home-content--left .text-3 {
-                font-size: 1.1rem;
-            }
-
-            .about .title::after,
-            .services .title::after,
-            .portfolio .title::after,
-            .contact .title::after {
-                width: 70vw;
-            }
-
-
-            .port-content .filter {
-                width: 100%;
-                height: 50px;
-                column-gap: 8px;
-                row-gap: 8px;
-                padding: 10px;
-            }
-
-            .filter .item {
-                font-size: 60%;
-            }
-
-            .benefits .card-benefit p {
-                font-size: 11px;
-            }
-
-            .benefits .card-benefit i {
-                font-size: 20px;
-            }
-
-            .about .about-content .right .text {
-                font-size: 24px;
-
-            }
-        }
-
-            @media (max-width:415px) {
-                .content--portfolio-photo-site-area a {
-                    width: 100%;
-                }
-
-                .content--portfolio-photo-info {
-                    width: 65%;
-                }
-
-                .about .about-content .right .text {
-                    font-size: 22px;
-
-
-                }
-            }
-
-                @media (max-width:390px) {
-
-                    .about .about-content .right .text {
-                        font-size: 20px;
-                    }
-                }
-
-                    /* ::-webkit-scrollbar {
+    .home-content--left .text-2 {
+        font-size: 2.5rem;
+    }
+
+    /* .about .about-content .left img {
+        width: 250px;
+        height: 250px;
+    } */
+
+    .benefits .card-benefit {
+        width: 25%;
+    }
+
+    .content--portfolio-photo-site-area a {
+        width: 250px;
+        height: 180px;
+
+    }
+}
+
+@media (max-width: 950px) {
+    .max-width {
+        max-width: 900px;
+        padding: 0;
+    }
+
+    .btn--Btn {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+        z-index: 01A5B1;
+    }
+
+    .navbar .menu {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        left: -100%;
+        top: 0;
+        padding-top: 80px;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+
+    .navbar .menu.active {
+        left: 0;
+    }
+
+    .navbar .menu li {
+        display: block;
+    }
+
+    .navbar .menu li a {
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+
+    .about .about-content .column {
+        width: 50%;
+    }
+
+    .about .about-content .left {
+        display: flex;
+        justify-content: center;
+        margin: 20px auto;
+    }
+
+    .about .about-content .right {
+        flex: 100%;
+    }
+
+    .services .serv-content .card {
+        width: 270px;
+        margin-bottom: 20px;
+    }
+
+    .serv-content .card p {
+        font-size: 12px;
+
+    }
+
+    .contact .contact-content .column {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+
+    .content--portfolio-photo-site-area a {
+        width: 220px;
+        height: 160px;
+    }
+
+    .contact {
+        padding-bottom: 130px;
+    }
+}
+
+@media (max-width:799px) {
+
+    .btn--Btn {
+        display: none;
+    }
+
+    .about .title::after,
+    .services .title::after,
+    .portfolio .title::after,
+    .contact .title::after {
+        width: 70vw;
+    }
+
+
+
+    .port-content .filter {
+        width: 100%;
+        height: 50px;
+        column-gap: 8px;
+        row-gap: 8px;
+        padding: 10px;
+    }
+
+    .content--portfolio-photo-site-area a {
+        width: 300px;
+        height: 200px;
+    }
+
+    .services .serv-content .card {
+        width: 200px;
+        margin-bottom: 20px;
+    }
+
+    /* .mediaSocial {
+        left: -85%;
+    } */
+
+
+}
+
+@media (max-width: 690px) {
+
+    .services .serv-content .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .content--portfolio-photo-site-area a {
+        width: 250px;
+        height: 170px;
+    }
+
+    .btn--Btn {
+        display: none;
+    }
+
+    /* .mediaSocial {
+        left: -570px;
+    } */
+
+    .about .about-content .left img {
+        width: 80%;
+        height: 50%;
+    }
+
+    .menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        top: 100px;
+        right: 0px;
+        background: linear-gradient(to right, var(--DarkOne), var(--greenOne));
+        transition: 0.6s;
+        z-index: 99000;
+        height: 0px;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #nav.active #menu {
+        height: calc(100vh - 100px);
+        visibility: visible;
+        overflow-y: auto;
+    }
+
+    .menu a {
+        padding: 1rem 0;
+        margin: 0 1rem;
+        /* border-bottom: 2px solid rgba(0, 0, 0, 0.05); */
+    }
+
+    #btn-mobile {
+        display: flex;
+        padding: 0.5rem 1rem;
+        font-size: 1.5rem;
+        border: none;
+        font-weight: 500;
+        text-shadow: 1px 1px 1px #000;
+        text-transform: uppercase;
+        background: none;
+        cursor: pointer;
+        gap: 0.5rem;
+    }
+
+    #hamburger {
+        border-top: 2px solid;
+        width: 35px;
+        margin-top: 4px;
+    }
+
+    #hamburger::before {
+        width: 30px;
+    }
+    #hamburger::after {
+        width: 30px;
+    }
+
+    #hamburger::after,
+    #hamburger::before {
+        content: '';
+        display: block;
+        height: 2px;
+        background: currentColor;
+        margin-top: 6px;
+        transition: 0.5s;
+        position: relative;
+        box-shadow: 0 0 2px #000;
+    }
+
+    #nav.active #hamburger {
+        border-top-color: transparent;
+    }
+
+    #nav.active #hamburger::before {
+        transform: rotate(135deg);
+    }
+
+    #nav.active #hamburger::after {
+        transform: rotate(-135deg);
+        top: -8px;
+    }
+
+    .home-content--left .text-2 {
+        font-size: 2.3rem;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+
+    .home-content--left .text-2 {
+        font-size: 1.5rem;
+    }
+
+    .home-content--left .text-3 {
+        font-size: 1.1rem;
+    }
+
+    .about .title::after,
+    .services .title::after,
+    .portfolio .title::after,
+    .contact .title::after {
+        width: 70vw;
+    }
+
+
+    .port-content .filter {
+        width: 100%;
+        height: 50px;
+        column-gap: 8px;
+        row-gap: 8px;
+        padding: 10px;
+    }
+
+    .filter .item {
+        font-size: 60%;
+    }
+
+    .benefits .card-benefit p {
+        font-size: 11px;
+    }
+
+    .benefits .card-benefit i {
+        font-size: 20px;
+    }
+
+    .about .about-content .right .text {
+        font-size: 24px;
+
+    }
+
+}
+
+@media (max-width:415px) {
+    .content--portfolio-photo-site-area a {
+        width: 100%;
+    }
+
+    .content--portfolio-photo-info {
+        width: 65%;
+    }
+
+    .about .about-content .right .text {
+        font-size: 22px;
+    }
+
+    .mediaSocial {
+        right: 2%;
+    }
+}
+
+@media (max-width:405px) {
+
+    .about .about-content .right .text {
+        font-size: 20px;
+    }
+    
+    .mediaSocial {
+        left: -87%;
+    }
+}
+
+/* ::-webkit-scrollbar {
     background-color: #01A5B1;
 } */
 
-                    body::-webkit-scrollbar {
-                        width: 12px;
-                        /*largura do scroll*/
-                    }
+body::-webkit-scrollbar {
+    width: 12px;
+    /*largura do scroll*/
+}
 
-                    body::-webkit-scrollbar-track {
-                        background: #1B1E25;
-                        /* cor do background */
-                    }
+body::-webkit-scrollbar-track {
+    background: #1B1E25;
+    /* cor do background */
+}
 
-                    body::-webkit-scrollbar-thumb {
-                        background-color: var(--greenOne);
-                        /* cor do thumb */
-                        border-radius: 20px;
-                        border: 3px solid #1B1E25;
-                    }
+body::-webkit-scrollbar-thumb {
+    background-color: var(--greenOne);
+    /* cor do thumb */
+    border-radius: 20px;
+    border: 3px solid #1B1E25;
+}
 
-                    /* animação scroll */
-                    /* .servEfect,
-.benefEfect,
-.efectAbout,
-.efectPort,
-.efectPort01,
-.efectPort02,
-.efectPort03,
-.efectLogo {
-    visibility: hidden;} */
+/* animação ScrollReveal */
+.efectScroll {
+    visibility: hidden;}
