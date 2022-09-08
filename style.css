@@ -1136,15 +1136,19 @@ a .content--portfolio-photo-info p {
 
 }
 
+@media (max-width: 550px) {
+    .scroll-up-btn {
+        left: 2.5%;
+    }
+}
+
 @media (max-width: 500px) {
 
     .max-width {
         width: 100%;
     }
 
-    .scroll-up-btn {
-        left: 2.5%;
-    }
+    
 
     .home-content--left .text-2 {
         font-size: 1.5rem;
