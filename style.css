@@ -1020,6 +1020,11 @@ a .content--portfolio-photo-info p {
 }
 
 @media (max-width: 690px) {
+    .home {
+        background-position: center;    
+    }
+
+
 
     .header {
         background: linear-gradient(var(--DarkOne), var(--DarkTwo));
@@ -1140,6 +1145,8 @@ a .content--portfolio-photo-info p {
     .scroll-up-btn {
         left: 2.5%;
     }
+
+
 }
 
 @media (max-width: 500px) {
