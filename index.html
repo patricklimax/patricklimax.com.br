@@ -41,7 +41,6 @@
 
     <!-- link do social media -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/1e715e0e3d.js" crossorigin="anonymous"></script>
 
 </head>
 
@@ -104,13 +103,22 @@
                     <li><a href="#about">Sobre</a></li>
                     <li><a href="#services">Soluções</a></li>
                     <li><a href="#portfolio">Portfólio</a></li>
-                    <!-- <li><a href="/">Preços</a></li> -->
+                    <li><a href="#price">Preços</a></li>
                     <!-- <li><a href="/">Blog</a></li> -->
                     <li><a href="#contact">Contato</a></li>
                 </ul>
             </nav>
-            <div class="btn--default btn--Btn">
+            <!-- <div class="btn--default btn--Btn">
                 <a href="#contact" class="btn-default">Fale Conosco</a>
+            </div> -->
+            <div class="btn--Btn">
+                <a href="#contact" class="btn-user">
+                    <span class="btn-title">Fale Conosco</span>
+                    <div class="topx"></div>
+                    <div class="leftx"></div>
+                    <div class="bottomx"></div>
+                    <div class="rightx"></div>
+                </a>
             </div>
         </div>
     </header>
@@ -124,8 +132,9 @@
                     <div class="text-3"><span class="typing"></span></div>
                 </div>
                 <div class="home-content--center efectScroll">
-                    <a class="mouse" href="#about"> -
-                        <i class="ri-arrow-down-line"></i>
+                    <a class="mouse" href="#about">
+                        <div class="mouse-ball"></div>
+                        <!-- <i class="ri-arrow-down-line"></i> -->
                     </a>
                 </div>
                 <div class="home-content--rigth">
@@ -133,15 +142,15 @@
                         <span class="tabTop"></span>
                         <div class="icons">
                             <a href="https://www.instagram.com/patricklimax/" target="_blank"
-                                class="icon icon--instagram"> -
-                                <i class="ri-instagram-line"></i> -
+                                class="icon icon--instagram">
+                                <i class="ri-instagram-line"></i>
                             </a>
                             <a href="https://api.whatsapp.com/send?phone=5598983342518&text=Ol%C3%A1%2C%20preciso%20de%20uma%20p%C3%A1gina%20web%20%3A)"
-                                class="icon icon--whatsapp" target="_blank"> -
-                                <i class="ri-whatsapp-line"></i> -
+                                class="icon icon--whatsapp" target="_blank">
+                                <i class="ri-whatsapp-line"></i>
                             </a>
-                            <a href="#contact" class="icon icon--mail"> -
-                                <i class="ri-mail-send-line"></i> -
+                            <a href="#contact" class="icon icon--mail">
+                                <i class="ri-mail-send-line"></i>
                             </a>
                         </div>
                         <span class="tabBottom"></span>
@@ -171,9 +180,18 @@
                         Dados,
                         Javascript, e outras tecnologias... <br> E cá estou eu: DESENVOLVENDO!!!</p><br>
                     <p> O aprendizado e crescimento são constantes. </p><br>
-                    <p>Rola o scroll para ver um pouco do meu trabalho.</p>
-                    <div class="btn--default" style="margin-top:20px">
+                    <p> Rola o scroll para ver um pouco do meu trabalho.</p>
+                    <!-- <div class="btn--default" style="margin-top:20px">
                         <a class="btn-default" href="#">Download CV</a>
+                    </div> -->
+                    <div class="efectScroll" style="margin-top:25px;">
+                        <a href="" class="btn-user">
+                            <span class="btn-title">Download CV</span>
+                            <div class="topx"></div>
+                            <div class="leftx"></div>
+                            <div class="bottomx"></div>
+                            <div class="rightx"></div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -185,7 +203,7 @@
         <div class="max-width">
             <h2 class="title efectScroll">Soluções</h2>
             <div class="serv-content">
-                <div class="card efectScroll">
+                <!-- <div class="card efectScroll">
                     <i class="ri-code-s-slash-line icon--serv"></i>
                     <h1>Landing <span>Page</span></h1>
                     <p>Desenvolvimento de landing page, com alta taxa conversão.</p>
@@ -199,6 +217,29 @@
                     <i class="ri-shopping-cart-2-line icon--serv"></i>
                     <h1>Loja <span>Virtual</span></h1>
                     <p>Criação de Loja Online, venda produtos ou prestação de serviços.</p>
+                </div> -->
+                <div class="card2 one efectScroll">
+                    <div class="card-text">
+                        <!-- <i class="ri-pages-line"></i> -->
+                        <h1>Landing <span>Page</span></h1>
+                        <p>Desenvolvimento de landing page, com alta taxa conversão.</p>
+                    </div>
+                </div>
+
+                <div class="card2 two efectScroll">
+                    <div class="card-text">
+                        <!-- <i class="ri-pages-line icon--serv"></i> -->
+                        <h1>Site <span>institucional</span></h1>
+                        <p>Desenvolvimento de Sites, criação de Blogs, Plugins.</p>
+                    </div>
+                </div>
+
+                <div class="card2 three efectScroll">
+                    <div class="card-text">
+                        <!-- <i class="ri-pages-line icon--serv"></i> -->
+                        <h1>Loja <span>Virtual</span></h1>
+                        <p>Criação de Loja Online, venda produtos ou prestação de serviços.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -253,8 +294,8 @@
                     <li class="item" data-filter="lojaVirtual">Loja Virtual</li>
                     <li class="item" data-filter="ecommerce">E-commerce</li>
                 </ul>
-                <ul class="itens">
-                    <li class="item landing efectScroll">
+                <ul class="itens efectScroll">
+                    <!-- <li class="item landing">
                         <div class="content--portfolio-photo-site">
                             <div class="content--portfolio-photo-site-area ">
                                 <a href="https://patricklimax.github.io/julyanasousa--landing/" target="_blank">
@@ -267,7 +308,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="item landing efectScroll">
+                    <li class="item landing">
                         <div class="content--portfolio-photo-site">
                             <div class="content--portfolio-photo-site-area ">
                                 <a href="https://patricklimax.github.io/julyanasousa--landing/" target="_blank">
@@ -280,7 +321,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="item landing efectScroll">
+                    <li class="item landing">
                         <div class="content--portfolio-photo-site">
                             <div class="content--portfolio-photo-site-area ">
                                 <a href="https://patricklimax.github.io/julyanasousa--landing/" target="_blank">
@@ -293,7 +334,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="item site efectScroll">
+                    <li class="item site">
                         <div class="content--portfolio-photo-site">
                             <div class="content--portfolio-photo-site-area ">
                                 <a href="https://patricklimax.github.io/julyanasousa--landing/" target="_blank">
@@ -306,7 +347,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="item site efectScroll">
+                    <li class="item site">
                         <div class="content--portfolio-photo-site">
                             <div class="content--portfolio-photo-site-area ">
                                 <a href="https://patricklimax.github.io/julyanasousa--landing/" target="_blank">
@@ -319,7 +360,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="item site efectScroll">
+                    <li class="item site">
                         <div class="content--portfolio-photo-site">
                             <div class="content--portfolio-photo-site-area ">
                                 <a href="https://patricklimax.github.io/julyanasousa--landing/" target="_blank">
@@ -332,7 +373,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="item landing efectScroll">
+                    <li class="item landing">
                         <div class="content--portfolio-photo-site">
                             <div class="content--portfolio-photo-site-area ">
                                 <a href="https://patricklimax.github.io/julyanasousa--landing/" target="_blank">
@@ -345,7 +386,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="item site efectScroll">
+                    <li class="item site">
                         <div class="content--portfolio-photo-site">
                             <div class="content--portfolio-photo-site-area ">
                                 <a href="https://patricklimax.github.io/julyanasousa--landing/" target="_blank">
@@ -358,7 +399,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="item lojaVirtual efectScroll">
+                    <li class="item lojaVirtual">
                         <div class="content--portfolio-photo-site">
                             <div class="content--portfolio-photo-site-area ">
                                 <a href="https://patricklimax.github.io/julyanasousa--landing/" target="_blank">
@@ -370,12 +411,197 @@
                                 </a>
                             </div>
                         </div>
+                    </li> -->
+                    <li class="item landing">
+                        <div class="cardOne" id="home">
+                            <div class="card-img card-img01"></div>
+                            <div class="card-info">
+                                <p class="title-card">Landing Page</p>
+                                <a href="https://www.patricklimax.com.br/" target="_blank" class="subtitle">Ver
+                                    Online</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item landing">
+                        <div class="cardOne" id="home">
+                            <div class="card-img card-img02"></div>
+                            <div class="card-info">
+                                <p class="title-card">Landing Page</p>
+                                <a href="https://www.patricklimax.com.br/" target="_blank" class="subtitle">Ver
+                                    Online</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item landing">
+                        <div class="cardOne" id="home">
+                            <div class="card-img card-img03"></div>
+                            <div class="card-info">
+                                <p class="title-card">Landing Page</p>
+                                <a href="https://www.patricklimax.com.br/" target="_blank" class="subtitle">Ver
+                                    Online</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item site">
+                        <div class="cardOne" id="home">
+                            <div class="card-img card-img04"></div>
+                            <div class="card-info">
+                                <p class="title-card">Landing Page</p>
+                                <a href="https://www.patricklimax.com.br/" target="_blank" class="subtitle">Ver
+                                    Online</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item site">
+                        <div class="cardOne" id="home">
+                            <div class="card-img card-img05"></div>
+                            <div class="card-info">
+                                <p class="title-card">Landing Page</p>
+                                <a href="https://www.patricklimax.com.br/" target="_blank" class="subtitle">Ver
+                                    Online</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item site">
+                        <div class="cardOne" id="home">
+                            <div class="card-img card-img06"></div>
+                            <div class="card-info">
+                                <p class="title-card">Landing Page</p>
+                                <a href="https://www.patricklimax.com.br/" target="_blank" class="subtitle">Ver
+                                    Online</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item landing">
+                        <div class="cardOne" id="home">
+                            <div class="card-img card-img07"></div>
+                            <div class="card-info">
+                                <p class="title-card">Landing Page</p>
+                                <a href="https://www.patricklimax.com.br/" target="_blank" class="subtitle">Ver
+                                    Online</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item site">
+                        <div class="cardOne" id="home">
+                            <div class="card-img card-img08"></div>
+                            <div class="card-info">
+                                <p class="title-card">Landing Page</p>
+                                <a href="https://www.patricklimax.com.br/" target="_blank" class="subtitle">Ver
+                                    Online</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="item lojaVirtual">
+                        <div class="cardOne" id="home">
+                            <div class="card-img card-img09"></div>
+                            <div class="card-info">
+                                <p class="title-card">Landing Page</p>
+                                <a href="https://www.patricklimax.com.br/" target="_blank" class="subtitle">Ver
+                                    Online</a>
+                            </div>
+                        </div>
                     </li>
                 </ul>
-                <div class="btn--default efectScroll" style="margin-top:20px">
-                    <a class="btn-default" href="#">Ver Mais</a>
+                <div class="efectScroll" style="margin-top:25px;">
+                    <a href="" class="btn-user">
+                        <span class="btn-title">Ver Mais</span>
+                        <div class="topx"></div>
+                        <div class="leftx"></div>
+                        <div class="bottomx"></div>
+                        <div class="rightx"></div>
+                    </a>
                 </div>
 
+                <!-- <div class="btn--default efectScroll" style="margin-top:20px">
+                    <a class="btn-default" href="#">Ver Mais</a>
+                </div> -->
+
+            </div>
+        </div>
+    </section>
+    <section class="price" id="price">
+        <div class="max-width">
+            <h2 class="title efectScroll">Investimento</h2>
+            <div class="price-content">
+                <div class="card-price efectScroll">
+                    <h1>Landing <span>Page</span></h1>
+                    <p>Para você que deseja vender seu produto e captar Leads.</p>
+                    <ul class="list-price">
+                        <li>1 Página com design único</li>
+                        <li>Página de confirmação e obrigado</li>
+                        <li>Editor visual de conteúdo</li>
+                        <li>Captação de Leads</li>
+                        <li>Copywriting</li>
+                        <li>Tecnologia Javascript, Html, Css</li>
+                    </ul>
+                    <div class="price-price">
+                        <span class="priceOne">10x de</span>
+                        <div class="priceTwo">R$ 55,00</div>
+                        <p>ou <span class="priceThree">R$ 499,00</span> à vista</p>
+                    </div>
+                    <div style="margin-top:50px;margin-bottom:20px;">
+                        <a href="#contact" class="btn-user">
+                            <span class="btn-title">Contratar</span>
+                            <div class="topx"></div>
+                            <div class="leftx"></div>
+                            <div class="bottomx"></div>
+                            <div class="rightx"></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-price efectScroll">
+                    <h1>Site <span>Institucional</span></h1>
+                    <p>Para você que deseja vender seu produto e captar Leads.</p>
+                    <ul class="list-price">
+                        <li>Até 5 páginas</li>
+                        <li>Editor visual de conteúdo</li>
+                        <li>Gerenciador de clientes</li>
+                        <li>Captação de Leads</li>
+                        <li>Copywriting</li>
+                        <li>Tecnologia Javascript, Html, Css</li>
+                    </ul>
+                    <div class="price-price">
+                        <span class="priceOne">10x de</span>
+                        <div class="priceTwo">R$ 139,90</div>
+                        <p>ou <span class="priceThree">R$ 1.399,00</span> à vista</p>
+                    </div>
+                    <div style="margin-top:50px;margin-bottom:20px;">
+                        <a href="#contact" class="btn-user">
+                            <span class="btn-title">Contratar</span>
+                            <div class="topx"></div>
+                            <div class="leftx"></div>
+                            <div class="bottomx"></div>
+                            <div class="rightx"></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-price efectScroll">
+                    <h1>Loja <span>Virtual</span></h1>
+                    <p>Para você que deseja vender seu produto e captar Leads.</p>
+                    <ul class="list-price">
+                        <li>Diversas telas personalizadas</li>
+                        <li>Funcionalidades sob demanda</li>
+                        <li>Gerenciador de usuários</li>
+                        <li>Captação de Leads</li>
+                        <li>Copywriting</li>
+                        <li>Tecnologia Javascript, Html, Css</li>
+                    </ul>
+                    <div class="price-price">
+                        <span class="priceOne">Faça já um</span>
+                        <div class="priceTwo">Orçamento</div>
+                        <p><span class="priceThree">sem compromisso</span> algum</p>
+                    </div>
+                    <div style="margin-top:50px;margin-bottom:20px;">
+                        <a href="#contact" class="btn-user">
+                            <span class="btn-title">Contratar</span>
+                            <div class="topx"></div>
+                            <div class="leftx"></div>
+                            <div class="bottomx"></div>
+                            <div class="rightx"></div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -442,9 +668,20 @@
                             </div>
                             <div class="button">
                                 <input type="hidden" name="_next" value="https://www.patricklimax.com.br/thanks.html">
-                                <div class="btn--default">
+                                <!-- <div class="btn--default">
                                     <button class="btn-default" type="submit">Enviar</button>
+                                </div> -->
+
+                                <div class="efectScroll">
+                                    <button href="" class="btn-user" type="submit">
+                                        <span class="btn-title">Enviar</span>
+                                        <div class="topx"></div>
+                                        <div class="leftx"></div>
+                                        <div class="bottomx"></div>
+                                        <div class="rightx"></div>
+                                    </button>
                                 </div>
+
                             </div>
                         </div>
                     </form>
@@ -500,9 +737,16 @@
         </div>
         <div class="footer-text efectScroll">
             <span>Desenvolvido por
-                <a href="#home">patricklimax </a> com
-                <i class="fa-solid fa-heart fa-beat"></i>
+                <a href="#home">patricklimax </a> com <svg class="heartPulse" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24" fill="#10B083">
+                    <g>
+                        <path fill="none" d="M0 0H24V24H0z" />
+                        <path
+                            d="M16.5 3C19.538 3 22 5.5 22 9c0 7-7.5 11-10 12.5-1.978-1.187-7.084-3.937-9.132-8.5h4.698l.934-1.556 3 5L13.566 13H17v-2h-4.566l-.934 1.556-3-5L6.434 11H2.21C2.074 10.363 2 9.696 2 9c0-3.5 2.5-6 5.5-6C9.36 3 11 4 12 5c1-1 2.64-2 4.5-2z" />
+                    </g>
+                </svg>
             </span>
+
             <span class="copy">Todos os direitos reservados - 2022</span>
         </div>
     </footer>
