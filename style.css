@@ -137,12 +137,12 @@ html {
     text-decoration: none;
     text-transform: uppercase;
     font-family: 'Major Mono Display', monospace;
-    transition: all 0.33s ease-in;
+    transition: all 0.25s ease-in;
 }
 
 #nav a:hover {
     color: var(--white);
-    text-shadow: 0px -4px 0px var(--greenOne);
+    text-shadow: 0px -3px 0px var(--greenOne);
 }
 
 .menu {
@@ -342,14 +342,16 @@ html {
 .home-content--left .text-2 {
     font-size: 60px;
     color: var(--greenOne);
-    text-shadow: 0px 2px 2px var(--DarkOne);
+    /* text-shadow: 0px 2px 2px var(--DarkOne); */
+    text-shadow: 5px 5px 0px #000;
     font-family: 'Major Mono Display', monospace;
 }
 
 .home-content--left .text-3 {
     text-align: right;
     font-size: 25px;
-    text-shadow: 0px 2px 2px var(--DarkOne);
+    /* text-shadow: 0px 2px 8px var(--DarkOne); */
+    text-shadow: 2px 2px 0px #000;
     font-family: 'Major Mono Display', monospace;
 }
 
