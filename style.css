@@ -515,6 +515,7 @@ section .title::after {
     color: var(--greenOne);
     padding: 5px;
     transform: translateX(-50%);
+    width: 80vw;
 }
 
 .about,
@@ -991,7 +992,7 @@ a .content--portfolio-photo-info p {
 /* section price */
 .card-price {
     padding: 30px 40px;
-    width: calc(33% - 30px);
+    width: calc(33% - 25px);
     box-shadow: 0 0 2px var(--greenOne);
     border-radius: 5px;
     display: flex;
@@ -999,7 +1000,7 @@ a .content--portfolio-photo-info p {
     background: var(--DarkOne);
     color: var(--grey);
     row-gap: 10px;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .price .title::after {
@@ -1007,7 +1008,7 @@ a .content--portfolio-photo-info p {
 }
 
 .card-price h1 {
-    font-size: 25px;
+    font-size: 1.5em;
     line-height: 30px;
     text-align: center;
 }
@@ -1022,10 +1023,14 @@ a .content--portfolio-photo-info p {
     /* line-height: 25px; */
 }
 
+.card-price .price-btn {
+    align-self: center;
+}
+
 .list-price li {
     color: var(--greenOne);
     list-style-type: circle;
-    font-size: 14px;
+    font-size: 0.8rem;
     line-height: 40px;
 }
 
@@ -1040,7 +1045,7 @@ a .content--portfolio-photo-info p {
 }
 
 .price-price .priceTwo {
-    font-size: 40px;
+    font-size: 1.5rem;
     font-weight: 600;
     line-height: 60px;
     color: var(--greenOne);
@@ -1385,13 +1390,6 @@ a .content--portfolio-photo-info p {
         display: none;
     }
 
-    .about .title::after,
-    .services .title::after,
-    .portfolio .title::after,
-    .contact .title::after {
-        width: 70vw;
-    }
-
     .port-content .filter {
         width: 100%;
         height: 50px;
@@ -1409,6 +1407,8 @@ a .content--portfolio-photo-info p {
         width: 30%;
         /* margin-bottom: 20px; */
     }
+
+    
 
     /* .mediaSocial {
         left: -85%;
@@ -1431,6 +1431,11 @@ a .content--portfolio-photo-info p {
 
     .card2 {
         width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .card-price {
+        width: 90%;
         margin-bottom: 20px;
     }
 
@@ -1546,6 +1551,8 @@ a .content--portfolio-photo-info p {
     }
 
 
+
+
 }
 
 @media (max-width: 500px) {
@@ -1563,14 +1570,6 @@ a .content--portfolio-photo-info p {
     .home-content--left .text-3 {
         font-size: 1.1rem;
     }
-
-    .about .title::after,
-    .services .title::after,
-    .portfolio .title::after,
-    .contact .title::after {
-        width: 70vw;
-    }
-
 
     .port-content .filter {
         width: 100%;
