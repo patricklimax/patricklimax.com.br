@@ -75,7 +75,7 @@
 
 html {
     scroll-behavior: smooth;
-    background: linear-gradient(var(--DarkOne), var(--DarkTwo));
+    /* background: linear-gradient(var(--DarkOne), var(--DarkTwo)); */
 }
 
 .max-width {
@@ -191,7 +191,7 @@ html {
     font-size: 15px;
     position: relative;
     overflow: hidden;
-    transition: 500ms;
+    transition: 300ms;
     text-decoration: none;
     background-color: transparent;
 }
@@ -199,8 +199,8 @@ html {
 .btn-user .btn-title {
     color: var(--greenOne);
     position: relative;
-    transition: 500ms;
-    transition-delay: 500ms;
+    transition: 300ms;
+    transition-delay: 300ms;
     font-size: 15px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -216,13 +216,13 @@ html {
     right: 50%;
     top: 50%;
     bottom: 50%;
-    transition: 1s;
-    transition-delay: 0.5s;
+    transition: 0.8s;
+    transition-delay: 0.3s;
     background-color: var(--greenOne);
 }
 
 .btn-user div {
-    transition: 500ms;
+    transition: 300ms;
     position: absolute;
     background-color: var(--greenOne);
 }
@@ -286,6 +286,29 @@ html {
 /* fim menu */
 /*#############################*/
 /* home */
+
+/* .custom-shape-divider-bottom-1663075790 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1663075790 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+}
+
+.custom-shape-divider-bottom-1663075790 .shape-fill {
+    fill: var(--greenOne);
+} */
+
+
 .home {
     display: flex;
     background: url('./assets/images/home/glenn-unsplash.webp') no-repeat;
@@ -366,16 +389,20 @@ html {
 
 }
 
-.mouse i {
+/* .mouse i {
     border-radius: 50%;
     position: absolute;
     animation: mousemove 0.8s infinite ease-in alternate;
-}
+} */
 
 .mouse:hover {
     background-color: var(--greenOne);
-    color: var(--DarkOne);
+    /* color: var(--DarkOne); */
     box-shadow: 0px 0px 8px 8px var(--DarkOne);
+}
+
+.mouse:hover .mouse-ball {
+    background-color: var(--DarkTwo);
 }
 
 .home-content--rigth {
@@ -407,6 +434,11 @@ html {
     display: flex;
     flex-direction: column;
     row-gap: 8px;
+}
+
+.icons span,
+.mouse span  {
+    font-size: 0;
 }
 
 .icons .icon {
@@ -484,12 +516,13 @@ section .title::after {
 }
 
 .about,
+/* .home, */
 .services,
 .portfolio,
 .price,
 .contact,
 .footer {
-    background: linear-gradient(var(--DarkTwo), var(--DarkTwo));
+    background: linear-gradient(var(--DarkTwo), var(--DarkOne));
     font-family: 'Poppins', sans-serif;
 }
 
@@ -590,11 +623,11 @@ section .title::after {
 }
 
 .card2.one {
-    background-image: url('assets/images/services/goran-ivos-iacpoKgpBAM-unsplash.jpg');    
+    background-image: url('assets/images/services/goran-ivos.webp');    
 }
 
 .card2.two {
-    background-image: url('assets/images/services/ben-kolde-FaPxZ88yZrw-unsplash.jpg');
+    background-image: url('assets/images/services/ben-kolde.webp');
 }
 
 .card2.three {
