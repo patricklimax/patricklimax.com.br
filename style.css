@@ -1173,9 +1173,11 @@ section .title::after {
     .button-on {
         display: none;
     }
+
     .media-social {
         margin-left: 80px;
     }
+
     .solution-card {
         width: 30%;
     }
@@ -1194,7 +1196,7 @@ section .title::after {
         height: 70vh;
         min-height: 500px;
     } */
-  
+
     .solution-card {
         width: 100%;
     }
@@ -1222,6 +1224,11 @@ section .title::after {
     .max-width {
         width: 100%;
     }
+
+    .homepage {
+        height: 70vh;
+    }
+
     .text-content-up {
         margin-top: 40%;
     }
@@ -1230,7 +1237,7 @@ section .title::after {
         font-size: 2.05rem;
     }
 
-    
+
     .benefits .card-benefit p {
         font-size: 11px;
     }
