@@ -1192,11 +1192,6 @@ section .title::after {
 
 @media (max-width: 690px) {
 
-    /* .homepage {
-        height: 70vh;
-        min-height: 500px;
-    } */
-
     .solution-card {
         width: 100%;
     }
@@ -1226,7 +1221,7 @@ section .title::after {
     }
 
     .homepage {
-        height: 70vh;
+        height: 60vh;
     }
 
     .text-content-up {
