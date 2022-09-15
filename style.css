@@ -1197,6 +1197,9 @@ section .title::after {
 }
 
 @media (max-width: 690px) {
+    .homepage {
+        height: 60vh;
+    }
 
     .solution-card {
         width: 100%;
@@ -1224,10 +1227,6 @@ section .title::after {
 @media (max-width: 500px) {
     .max-width {
         width: 100%;
-    }
-
-    .homepage {
-        height: 60vh;
     }
 
     .text-content-up {
