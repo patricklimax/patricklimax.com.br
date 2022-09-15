@@ -80,15 +80,15 @@ $(document).ready(function () {
 });
 
 // ScrollReveal
-window.sr = ScrollReveal({ reset: true });
-ScrollReveal().reveal(".efectScroll", {
-  delay: 200,
-  rotate: {
-    x: 100,
-    y: 0,
-    z: 0,
-  },
-});
+// window.sr = ScrollReveal({ reset: true });
+// ScrollReveal().reveal(".efectScroll", {
+//   delay: 200,
+//   rotate: {
+//     x: 100,
+//     y: 0,
+//     z: 0,
+//   },
+// });
 
 // filter portfolio
 $(document).ready(function () {

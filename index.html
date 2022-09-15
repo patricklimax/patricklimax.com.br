@@ -44,7 +44,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
-    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- link do social media -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -55,8 +56,8 @@
     <div class="scroll-up-btn">
         <ion-icon class="up" name="chevron-up-outline"></ion-icon>
     </div>
-    <header class="header efectScroll">
-        <div class="menuSpace default">
+    <header class="header efectScroll" data-aos="zoom-in-down" data-aos-duration="1000">
+        <div class="menuSpace">
             <div class="logotipo">
                 <img src="assets/images/logotipo/png.png" alt="Logo da Empresa Patrick Lima">
             </div>
@@ -101,7 +102,7 @@
     <!--home section inicio-->
     <section class="homepage" id="homepage">
         <div class="max-width">
-            <div class="home-content">
+            <div class="home-content" data-aos="zoom-in-up" data-aos-duration="1000">
                 <div class="text-content-up">
                     <div class="text-1">Eu SoU</div>
                     <div class="text-bar"></div>
@@ -125,10 +126,10 @@
         <div class="max-width">
             <h2 class="title efectScroll">SOBRE</h2>
             <div class="about-content">
-                <div class="column left efectScroll">
+                <div class="column left efectScroll" data-aos="fade-up" data-aos-duration="2000">
                     <img src="assets/images/about/patricklimaxPL.webp" alt="Foto Patrick Lima">
                 </div>
-                <div class="column right efectScroll">
+                <div class="column right efectScroll" data-aos="fade-up" data-aos-duration="2000">
                     <div class="text">Sou Patrick <span class="typing-2"></span></div>
                     <p>Gosto de matemática, cálculos, raciocínio lógico, lógica e excel. A curiosidade sempre me fez
                         buscar por mais. Descobri sobre um mundo "escondido" por trás do Excel: o Visual Basic
@@ -161,21 +162,21 @@
         <div class="max-width">
             <h2 class="title efectScroll">SOLUÇÕES</h2>
             <div class="solution-content">
-                <div class="solution-card one efectScroll">
+                <div class="solution-card one efectScroll" data-aos="fade-right" data-aos-duration="2000">
                     <div class="solution-card-text">
                         <h1>Landing <span>Page</span></h1>
                         <p>Desenvolvimento de landing page, com alta taxa conversão.</p>
                     </div>
                 </div>
 
-                <div class="solution-card two efectScroll">
+                <div class="solution-card two efectScroll" data-aos="fade-right" data-aos-duration="2000">
                     <div class="solution-card-text">
                         <h1>Site <span>institucional</span></h1>
                         <p>Desenvolvimento de Sites, criação de Blogs, Plugins.</p>
                     </div>
                 </div>
 
-                <div class="solution-card three efectScroll">
+                <div class="solution-card three efectScroll" data-aos="fade-right" data-aos-duration="2000">
                     <div class="solution-card-text">
                         <h1>Loja <span>Virtual</span></h1>
                         <p>Criação de Loja Online, venda produtos ou prestação de serviços.</p>
@@ -188,32 +189,32 @@
     <!--section benefícios-->
     <section class="benefits">
         <div class="max-width benefit">
-            <div class="card-benefit efectScroll">
+            <div class="card-benefit efectScroll" data-aos="fade-left" data-aos-duration="2000">
                 <i class="ri-user-search-line iconb"></i>
                 <h1>Especialista em SEO</h1>
                 <p>Site no Topo do Google, melhorar o posicionamento nos sites de busca.</p>
             </div>
-            <div class="card-benefit efectScroll">
+            <div class="card-benefit efectScroll" data-aos="fade-left" data-aos-duration="2000">
                 <i class="ri-device-line iconb"></i>
                 <h1>Design Responsivo</h1>
                 <p>Layout do Site adaptado para Smartphones, Tablets, Smart TVs e Desktops.</p>
             </div>
-            <div class="card-benefit efectScroll">
+            <div class="card-benefit efectScroll" data-aos="fade-left" data-aos-duration="2000">
                 <i class="ri-repeat-2-line iconb"></i>
                 <h1>Gerenciador de Conteúdo</h1>
                 <p>Adicione, edite e remova conteúdos do seu site através do suporte online.</p>
             </div>
-            <div class="card-benefit efectScroll">
+            <div class="card-benefit efectScroll" data-aos="fade-left" data-aos-duration="2000">
                 <i class="ri-group-line iconb"></i>
                 <h1>Redes Sociais</h1>
                 <p>Botões com links para as suas Redes Sociais (Facebook, Instagram...)</p>
             </div>
-            <div class="card-benefit efectScroll">
+            <div class="card-benefit efectScroll" data-aos="fade-left" data-aos-duration="2000">
                 <i class="ri-customer-service-2-fill iconb"></i>
                 <h1>Suporte</h1>
                 <p>Esclareça as suas dúvidas com nosso Suporte por e-mail ou telefone.</p>
             </div>
-            <div class="card-benefit efectScroll">
+            <div class="card-benefit efectScroll" data-aos="fade-left" data-aos-duration="2000">
                 <i class="ri-at-line iconb"></i>
                 <h1>E-mail/Domínio</h1>
                 <p>Criação de e-mails e domínio personalizados, ex: contato@suamarca.com.br.</p>
@@ -226,16 +227,16 @@
         <div class="max-width">
             <h2 class="title efectScroll">PORTFÓLIO</h2>
             <div class="portfolio-content">
-                <ul class="portfolio-content-filter efectScroll">
+                <ul class="portfolio-content-filter efectScroll" data-aos="zoom-in">
                     <li class="item active" data-filter="all">Todos</li>
                     <li class="item" data-filter="site">Sites</li>
                     <li class="item" data-filter="landing">Landing Page</li>
-                    <li class="item" data-filter="aplicativo">Aplicativos</li>
+                    <!-- <li class="item" data-filter="aplicativo">Aplicativos</li> -->
                     <li class="item" data-filter="lojaVirtual">Loja Virtual</li>
-                    <li class="item" data-filter="ecommerce">E-commerce</li>
+                    <!-- <li class="item" data-filter="ecommerce">E-commerce</li> -->
                 </ul>
-                <ul class="itens efectScroll">
-                    <li class="item landing">
+                <ul class="itens efectScroll" data-aos="zoom-in">
+                    <li class="item landing" >
                         <div class="portfolio-card" id="home">
                             <div class="portfolio-card-img portfolio-card-img01"></div>
                             <div class="portfolio-card-info">
@@ -351,7 +352,7 @@
         <div class="max-width">
             <h2 class="title efectScroll">INVESTIMENTO</h2>
             <div class="price-content">
-                <div class="price-content-card efectScroll">
+                <div class="price-content-card efectScroll" data-aos="fade-up" data-aos-duration="2000">
                     <h1>Landing <span>Page</span></h1>
                     <p>Para você que deseja vender seu produto e captar Leads.</p>
                     <ul class="list-price">
@@ -377,7 +378,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="price-content-card efectScroll">
+                <div class="price-content-card efectScroll" data-aos="fade-up" data-aos-duration="2000">
                     <h1>Site <span>Institucional</span></h1>
                     <p>Para você que deseja vender seu produto e captar Leads.</p>
                     <ul class="list-price">
@@ -403,7 +404,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="price-content-card efectScroll">
+                <div class="price-content-card efectScroll" data-aos="fade-up" data-aos-duration="2000">
                     <h1>Loja <span>Virtual</span></h1>
                     <p>Para você que deseja vender seu produto e captar Leads.</p>
                     <ul class="list-price">
@@ -438,7 +439,7 @@
         <div class="max-width">
             <h2 class="title efectScroll">CONTATO</h2>
             <div class="contact-content">
-                <div class="column left efectScroll">
+                <div class="column left efectScroll" data-aos="fade-right" data-aos-duration="2000">
                     <div class="text">Fale Conosco</div>
                     <p>O que você está precisando? Envia sua mensagem e me conta. Caso queira uma visita presencial,
                         estamos localizados no endereço abaixo.</p><br>
@@ -456,7 +457,7 @@
                     </div>
                 </div>
                 <!--column left-->
-                <div class="column rigth efectScroll">
+                <div class="column rigth efectScroll" data-aos="fade-left" data-aos-duration="2000">
                     <div class="text">Mensagem</div>
                     <form action="https://formsubmit.co/1aa9367930821ce25e860538d817376b" method="POST"
                         id="contrate-me">
@@ -500,7 +501,7 @@
     </section>
     <!--fim section contato-->
     <!--section  footer-->
-    <footer class="footer dark">
+    <footer class="footer dark" data-aos="zoom-in-up" data-aos-duration="1000">
         <div class="logotipo efectScroll">
             <img src="assets/images/logotipo/png.png" alt="Logo da Empresa Patrick Lima">
         </div>
@@ -539,6 +540,12 @@
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"> -->
 
     <!-- <script src="https://code.jquery.com/jquery-3.5.1.js"></script> -->
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 
 </body>
 
