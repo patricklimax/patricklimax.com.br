@@ -1034,6 +1034,7 @@ section .title::after {
 
     .menuSpace {
         width: 95%;
+        background-color: #285AEB;
     }
 
     section {
