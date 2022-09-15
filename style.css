@@ -1198,7 +1198,7 @@ section .title::after {
 
 @media (max-width: 690px) {
     .homepage {
-        height: 60vh;
+        height: 80vh;
     }
 
     .solution-card {
