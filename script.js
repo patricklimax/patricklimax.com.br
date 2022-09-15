@@ -25,11 +25,11 @@ btnMobile.addEventListener("touchstart", toggleMenu);
 
 $(document).ready(function () {
   $(window).scroll(function () {
-    // if (this.scrollY > 20) {
-    //   $(".navbar").addClass("sticky");
-    // } else {
-    //   $(".navbar").removeClass("sticky");
-    // }
+    if (this.scrollY > 20) {
+      $(".header").addClass("sticky");
+    } else {
+      $(".header").removeClass("sticky");
+    }
     if (this.scrollY > 300) {
       $(".scroll-up-btn").addClass("show");
     } else {
@@ -92,7 +92,7 @@ ScrollReveal().reveal(".efectScroll", {
 
 // filter portfolio
 $(document).ready(function () {
-    $(".filter .item").click(function () {
+    $(".portfolio-content-filter .item").click(function () {
         $(this).addClass("active").siblings().removeClass("active");
 
         $(".itens").fadeOut();

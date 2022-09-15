@@ -28,13 +28,20 @@
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/images/about/apple-touch-icon.png" />
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/images/about/apple-touch-icon.png" />
 
-    <meta name="theme-color" content="#1B1920">
+    <meta name="theme-color" content="#10B083">
     <!-- Windows Phone -->
-    <meta name="msapplication-navbutton-color" content="#1B1920">
+    <meta name="msapplication-navbutton-color" content="#10B083">
     <!-- iOS Safari -->
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <!-- FIM META -->
+    <!-- fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;900&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -50,47 +57,19 @@
     </div>
     <header class="header efectScroll">
         <div class="menuSpace default">
-            <div class="logo">
-                <img src="assets/images/about/patricklimalogo.png" alt="Logo da Empresa Patrick Lima">
-                <!-- <a href="#home">
-                    <svg class="logo_svg" version="1.0" xmlns="http://www.w3.org/2000/svg" width="512.000000pt"
-                        height="390.000000pt" viewBox="0 0 512.000000 390.000000" preserveAspectRatio="xMidYMid meet">
-                        <defs>
-                            <linearGradient id="grad11" x1="40%" y1="0%" x2="100%" y2="0%">
-                                <stop offset="0%" style="stop-color:#fff;stop-opacity:1" />
-                                <stop offset="100%" style="stop-color:#10B083;stop-opacity:1" />
-                            </linearGradient>
-                        </defs>
-
-                        <defs>
-                            <linearGradient id="grad22" x1="0%" y1="0%" x2="100%" y2="0%">
-                                <stop offset="0%" style="stop-color:#10B083;stop-opacity:1" />
-                                <stop offset="100%" style="stop-color:#10B083;stop-opacity:1" />
-                            </linearGradient>
-                        </defs>
-
-                        <defs>
-                            <linearGradient id="grad33" x1="0%" y1="0%" x2="100%" y2="0%">
-                                <stop offset="50%" style="stop-color:#fff;stop-opacity:1" />
-                                <stop offset="100%" style="stop-color:#10B083;stop-opacity:1" />
-                            </linearGradient>
-                        </defs>
-
-                        <g transform="translate(0.000000,390.000000) scale(0.100000,-0.100000)" stroke="none">
-                            <path fill="url(#grad33)"
-                                d="M4107 3838 c-73 -99 -2177 -3210 -2177 -3219 0 -7 9 -9 23 -5 12 3 420 6 907 6 l885 0 158 210 c86 116 156 211 155 212 -2 1 -270 5 -595 8 l-593 5 940 1398 c517 768 940 1402 940 1407 0 6 -113 10 -309 10 l-310 0 -24 -32z" />
-
-                            <path fill="url(#grad22)"
-                                d="M4389 3135 c-35 -54 -118 -184 -185 -288 l-121 -188 98 -306 c54 -169 95 -312 91 -317 -6 -11 -680 -844 -710 -878 -14 -17 -1 -18 270 -18 l284 0 359 422 c197 233 358 430 358 438 -2 17 -358 1183 -372 1215 -7 17 -17 6 -72 -80z" />
-
-                            <path fill="url(#grad33)"
-                                d="M795 2600 c-280 -343 -514 -629 -518 -637 -6 -9 280 -1171 329 -1335 5 -16 19 -18 112 -18 59 0 136 3 172 6 l65 7 135 193 c74 107 142 204 150 215 l14 22 -132 -5 c-73 -3 -132 -2 -132 0 0 3 -34 203 -76 444 -65 378 -73 440 -62 457 8 11 176 218 373 460 l360 440 451 1 450 0 121 180 121 180 -533 0 c-292 0 -612 3 -711 6 l-179 6 -510 -622z" />
-
-                            <path fill="url(#grad22)"
-                                d="M1894 1748 c-549 -804 -1038 -1520 -1086 -1590 l-87 -128 317 2 317 3 1082 1585 c596 872 1083 1586 1083 1588 0 1 -141 2 -314 2 l-313 0 -999 -1462z" />
-                        </g>
-                    </svg>
-                </a> -->
+            <div class="logotipo">
+                <img src="assets/images/logotipo/png.png" alt="Logo da Empresa Patrick Lima">
+            </div>
+            <div class="media-social">
+                <a href="" class="icon icon--instagram">
+                    <i class="ri-instagram-line"></i>
+                </a>
+                <a href="" class="icon icon--whatsapp">
+                    <i class="ri-whatsapp-line"></i>
+                </a>
+                <a href="" class="icon icon--mail">
+                    <i class="ri-mail-send-line"></i>
+                </a>
             </div>
             <nav id="nav" class="navigation">
                 <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
@@ -99,73 +78,46 @@
                     <span id="hamburger"></span>
                 </button>
                 <ul id="menu" class="menu" role="menu">
-                    <li><a href="#home">HomePage</a></li>
+                    <li><a href="#homepage">HomePage</a></li>
                     <li><a href="#about">Sobre</a></li>
-                    <li><a href="#services">Soluções</a></li>
+                    <li><a href="#solution">Soluções</a></li>
                     <li><a href="#portfolio">Portfólio</a></li>
                     <li><a href="#price">Preços</a></li>
-                    <!-- <li><a href="/">Blog</a></li> -->
                     <li><a href="#contact">Contato</a></li>
                 </ul>
             </nav>
-            <!-- <div class="btn--default btn--Btn">
-                <a href="#contact" class="btn-default">Fale Conosco</a>
-            </div> -->
-            <div class="btn--Btn">
-                <a href="#contact" class="btn-user">
+            <div class="button-on">
+                <a href="#contact" class="btn-link">
                     <span class="btn-title">Fale Conosco</span>
-                    <div class="topx"></div>
-                    <div class="leftx"></div>
-                    <div class="bottomx"></div>
-                    <div class="rightx"></div>
+                    <div class="btn-top"></div>
+                    <div class="btn-left"></div>
+                    <div class="btn-bottom"></div>
+                    <div class="btn-right"></div>
                 </a>
             </div>
         </div>
     </header>
 
     <!--home section inicio-->
-    <section class="home" id="home">
+    <section class="homepage" id="homepage">
         <div class="max-width">
-            <div class="homeHome">
-                <div class="home-content--left efectScroll">
+            <div class="home-content">
+                <div class="text-content-up">
+                    <div class="text-1">Eu SoU</div>
+                    <div class="text-bar"></div>
+                </div>
+                <div class="text-content-center">
                     <div class="text-2">PATRICK LIMA</div>
                     <div class="text-3"><span class="typing"></span></div>
                 </div>
-                <div class="home-content--center efectScroll">
-                    <a class="mouse" href="#about">
-                        <div class="mouse-ball"></div>
-                        <span>-</span>
-                        <!-- <i class="ri-arrow-down-line"></i> -->
+                <div class="text-content-down">
+                    <a href="#contact" class="scroll-down">
+                        <p>SCROLL DOWN ><p>
                     </a>
                 </div>
-                <div class="home-content--rigth">
-                    <div class="mediaSocial efectScroll">
-                        <span class="tabTop"></span>
-                        <div class="icons">
-                            <a href="https://www.instagram.com/patricklimax/" target="_blank"
-                                class="icon icon--instagram"><span>-</span>
-                                <i class="ri-instagram-line"></i><span>-</span>
-                            </a>
-                            <a href="https://api.whatsapp.com/send?phone=5598983342518&text=Ol%C3%A1%2C%20preciso%20de%20uma%20p%C3%A1gina%20web%20%3A)"
-                                class="icon icon--whatsapp" target="_blank"><span>-</span>
-                                <i class="ri-whatsapp-line"></i><span>-</span>
-                            </a>
-                            <a href="#contact" class="icon icon--mail"><span>-</span>
-                                <i class="ri-mail-send-line"></i><span>-</span>
-                            </a>
-                        </div>
-                        <span class="tabBottom"></span>
-                    </div>
-                </div>
+
             </div>
         </div>
-        <!-- <div class="custom-shape-divider-bottom-1663075790">
-            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
-                <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
-                <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
-            </svg>
-        </div> -->
     </section>
     <!--fim home section inicio-->
     <!--section sobre-->
@@ -179,26 +131,24 @@
                 <div class="column right efectScroll">
                     <div class="text">Sou Patrick <span class="typing-2"></span></div>
                     <p>Gosto de matemática, cálculos, raciocínio lógico, lógica e excel. A curiosidade sempre me fez
-                        buscar por mais. Logo descobri sobre um mundo "escondido" por trás do Excel: o Visual Basic
+                        buscar por mais. Descobri sobre um mundo "escondido" por trás do Excel: o Visual Basic
                         for
                         Applications (VBA). Primeira linguagem de programação com a qual tive contato e pude
                         desfrutar
                         de excelentes soluções. Em 2020, depois de muito trabalho com tributos, resolvi focar no
-                        desenvolvimento de aplicações mais estruturadas, e comecei a estudar HTML, CSS, Banco de
-                        Dados,
-                        Javascript, e outras tecnologias... <br> E cá estou eu: DESENVOLVENDO!!!</p><br>
+                        desenvolvimento de aplicações mais estruturadas, e comecei a estudar sobre desenvolvimento de
+                        aplicações. <br>
+                        E cá estou eu: DESENVOLVENDO!!!</p><br>
                     <p> O aprendizado e crescimento são constantes. </p><br>
                     <p> Rola o scroll para ver um pouco do meu trabalho.</p>
-                    <!-- <div class="btn--default" style="margin-top:20px">
-                        <a class="btn-default" href="#">Download CV</a>
-                    </div> -->
+
                     <div class="efectScroll" style="margin-top:25px;">
-                        <a href="#contact" class="btn-user">
+                        <a href="#contact" class="btn-link">
                             <span class="btn-title">Download CV</span>
-                            <div class="topx"></div>
-                            <div class="leftx"></div>
-                            <div class="bottomx"></div>
-                            <div class="rightx"></div>
+                            <div class="btn-top"></div>
+                            <div class="btn-left"></div>
+                            <div class="btn-bottom"></div>
+                            <div class="btn-right"></div>
                         </a>
                     </div>
                 </div>
@@ -207,44 +157,26 @@
     </section>
     <!--fim section sobre-->
     <!--section serviços-->
-    <section class="services" id="services">
+    <section class="solution" id="solution">
         <div class="max-width">
             <h2 class="title efectScroll">SOLUÇÕES</h2>
-            <div class="serv-content">
-                <!-- <div class="card efectScroll">
-                    <i class="ri-code-s-slash-line icon--serv"></i>
-                    <h1>Landing <span>Page</span></h1>
-                    <p>Desenvolvimento de landing page, com alta taxa conversão.</p>
-                </div>
-                <div class="card efectScroll">
-                    <i class="ri-pages-line icon--serv"></i>
-                    <h1>Site <span>institucional</span></h1>
-                    <p>Desenvolvimento de Sites, criação de Blogs, Plugins, HotSites.</p>
-                </div>
-                <div class="card efectScroll">
-                    <i class="ri-shopping-cart-2-line icon--serv"></i>
-                    <h1>Loja <span>Virtual</span></h1>
-                    <p>Criação de Loja Online, venda produtos ou prestação de serviços.</p>
-                </div> -->
-                <div class="card2 one efectScroll">
-                    <div class="card-text">
-                        <!-- <i class="ri-pages-line"></i> -->
+            <div class="solution-content">
+                <div class="solution-card one efectScroll">
+                    <div class="solution-card-text">
                         <h1>Landing <span>Page</span></h1>
                         <p>Desenvolvimento de landing page, com alta taxa conversão.</p>
                     </div>
                 </div>
 
-                <div class="card2 two efectScroll">
-                    <div class="card-text">
-                        <!-- <i class="ri-pages-line icon--serv"></i> -->
+                <div class="solution-card two efectScroll">
+                    <div class="solution-card-text">
                         <h1>Site <span>institucional</span></h1>
                         <p>Desenvolvimento de Sites, criação de Blogs, Plugins.</p>
                     </div>
                 </div>
 
-                <div class="card2 three efectScroll">
-                    <div class="card-text">
-                        <!-- <i class="ri-pages-line icon--serv"></i> -->
+                <div class="solution-card three efectScroll">
+                    <div class="solution-card-text">
                         <h1>Loja <span>Virtual</span></h1>
                         <p>Criação de Loja Online, venda produtos ou prestação de serviços.</p>
                     </div>
@@ -293,8 +225,8 @@
     <section class="portfolio" id="portfolio">
         <div class="max-width">
             <h2 class="title efectScroll">PORTFÓLIO</h2>
-            <div class="port-content">
-                <ul class="filter efectScroll">
+            <div class="portfolio-content">
+                <ul class="portfolio-content-filter efectScroll">
                     <li class="item active" data-filter="all">Todos</li>
                     <li class="item" data-filter="site">Sites</li>
                     <li class="item" data-filter="landing">Landing Page</li>
@@ -303,228 +235,115 @@
                     <li class="item" data-filter="ecommerce">E-commerce</li>
                 </ul>
                 <ul class="itens efectScroll">
-                    <!-- <li class="item landing">
-                        <div class="content--portfolio-photo-site">
-                            <div class="content--portfolio-photo-site-area ">
-                                <a href="https://patricklimax.github.io/julyanasousa--landing/" target="_blank">
-                                    <div class="content--portfolio-photo-info">
-                                        <h1>Landing Page</h1>
-                                        <p>Clique para ver mais</p>
-                                    </div>
-                                    <img alt="Template Site" src="assets/images/portfolio/img01_land.webp" />
-                                </a>
-                            </div>
-                        </div>
-                    </li>
                     <li class="item landing">
-                        <div class="content--portfolio-photo-site">
-                            <div class="content--portfolio-photo-site-area ">
-                                <a href="https://patricklimax.github.io/julyanasousa--landing/" target="_blank">
-                                    <div class="content--portfolio-photo-info">
-                                        <h1>Landing Page - Advogado</h1>
-                                        <p>Clique para ver mais</p>
-                                    </div>
-                                    <img alt="Template Site" src="assets/images/portfolio/img02_land.webp">
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="item landing">
-                        <div class="content--portfolio-photo-site">
-                            <div class="content--portfolio-photo-site-area ">
-                                <a href="https://patricklimax.github.io/julyanasousa--landing/" target="_blank">
-                                    <div class="content--portfolio-photo-info">
-                                        <h1>Landing Page</h1>
-                                        <p>Clique para ver mais</p>
-                                    </div>
-                                    <img alt="Template Site" src="assets/images/portfolio/img03_land.webp">
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="item site">
-                        <div class="content--portfolio-photo-site">
-                            <div class="content--portfolio-photo-site-area ">
-                                <a href="https://patricklimax.github.io/julyanasousa--landing/" target="_blank">
-                                    <div class="content--portfolio-photo-info">
-                                        <h1>Site - Página Rápida</h1>
-                                        <p>Clique para ver mais</p>
-                                    </div>
-                                    <img alt="Template Site" src="assets/images/portfolio/img04_site.webp">
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="item site">
-                        <div class="content--portfolio-photo-site">
-                            <div class="content--portfolio-photo-site-area ">
-                                <a href="https://patricklimax.github.io/julyanasousa--landing/" target="_blank">
-                                    <div class="content--portfolio-photo-info">
-                                        <h1>Site - Página Rápida</h1>
-                                        <p>Clique para ver mais</p>
-                                    </div>
-                                    <img alt="Template Site" src="assets/images/portfolio/img05_site.webp">
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="item site">
-                        <div class="content--portfolio-photo-site">
-                            <div class="content--portfolio-photo-site-area ">
-                                <a href="https://patricklimax.github.io/julyanasousa--landing/" target="_blank">
-                                    <div class="content--portfolio-photo-info">
-                                        <h1>Site - Página Rápida</h1>
-                                        <p>Clique para ver mais</p>
-                                    </div>
-                                    <img alt="Template Site" src="assets/images/portfolio/img06_site.webp">
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="item landing">
-                        <div class="content--portfolio-photo-site">
-                            <div class="content--portfolio-photo-site-area ">
-                                <a href="https://patricklimax.github.io/julyanasousa--landing/" target="_blank">
-                                    <div class="content--portfolio-photo-info">
-                                        <h1>Landing Page</h1>
-                                        <p>Clique para ver mais</p>
-                                    </div>
-                                    <img alt="Template Site" src="assets/images/portfolio/img07_land.webp">
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="item site">
-                        <div class="content--portfolio-photo-site">
-                            <div class="content--portfolio-photo-site-area ">
-                                <a href="https://patricklimax.github.io/julyanasousa--landing/" target="_blank">
-                                    <div class="content--portfolio-photo-info">
-                                        <h1>Site Simples</h1>
-                                        <p>Clique para ver mais</p>
-                                    </div>
-                                    <img alt="Template Site" src="assets/images/portfolio/img08_site.webp">
-                                </a>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="item lojaVirtual">
-                        <div class="content--portfolio-photo-site">
-                            <div class="content--portfolio-photo-site-area ">
-                                <a href="https://patricklimax.github.io/julyanasousa--landing/" target="_blank">
-                                    <div class="content--portfolio-photo-info">
-                                        <h1>Loja Virtual</h1>
-                                        <p>Clique para ver mais</p>
-                                    </div>
-                                    <img alt="Template Site" src="assets/images/portfolio/img09_loja.webp">
-                                </a>
-                            </div>
-                        </div>
-                    </li> -->
-                    <li class="item landing">
-                        <div class="cardOne" id="home">
-                            <div class="card-img card-img01"></div>
-                            <div class="card-info">
-                                <p class="title-card">Landing Page</p>
-                                <a href="https://www.patricklimax.com.br/" target="_blank" class="subtitle">Ver
+                        <div class="portfolio-card" id="home">
+                            <div class="portfolio-card-img portfolio-card-img01"></div>
+                            <div class="portfolio-card-info">
+                                <p class="portfolio-card-title">Landing Page</p>
+                                <a href="https://www.patricklimax.com.br/" target="_blank"
+                                    class="portfolio-card-subtitle">Ver
                                     Online</a>
                             </div>
                         </div>
                     </li>
                     <li class="item landing">
-                        <div class="cardOne" id="home">
-                            <div class="card-img card-img02"></div>
-                            <div class="card-info">
-                                <p class="title-card">Landing Page</p>
-                                <a href="https://www.patricklimax.com.br/" target="_blank" class="subtitle">Ver
+                        <div class="portfolio-card" id="home">
+                            <div class="portfolio-card-img portfolio-card-img02"></div>
+                            <div class="portfolio-card-info">
+                                <p class="portfolio-card-title">Landing Page</p>
+                                <a href="https://www.patricklimax.com.br/" target="_blank"
+                                    class="portfolio-card-subtitle">Ver
                                     Online</a>
                             </div>
                         </div>
                     </li>
                     <li class="item landing">
-                        <div class="cardOne" id="home">
-                            <div class="card-img card-img03"></div>
-                            <div class="card-info">
-                                <p class="title-card">Landing Page</p>
-                                <a href="https://www.patricklimax.com.br/" target="_blank" class="subtitle">Ver
+                        <div class="portfolio-card" id="home">
+                            <div class="portfolio-card-img portfolio-card-img03"></div>
+                            <div class="portfolio-card-info">
+                                <p class="portfolio-card-title">Landing Page</p>
+                                <a href="https://www.patricklimax.com.br/" target="_blank"
+                                    class="portfolio-card-subtitle">Ver
                                     Online</a>
                             </div>
                         </div>
                     </li>
                     <li class="item site">
-                        <div class="cardOne" id="home">
-                            <div class="card-img card-img04"></div>
-                            <div class="card-info">
-                                <p class="title-card">Landing Page</p>
-                                <a href="https://www.patricklimax.com.br/" target="_blank" class="subtitle">Ver
+                        <div class="portfolio-card" id="home">
+                            <div class="portfolio-card-img portfolio-card-img04"></div>
+                            <div class="portfolio-card-info">
+                                <p class="portfolio-card-title">Landing Page</p>
+                                <a href="https://www.patricklimax.com.br/" target="_blank"
+                                    class="portfolio-card-subtitle">Ver
                                     Online</a>
                             </div>
                         </div>
                     </li>
                     <li class="item site">
-                        <div class="cardOne" id="home">
-                            <div class="card-img card-img05"></div>
-                            <div class="card-info">
-                                <p class="title-card">Landing Page</p>
-                                <a href="https://www.patricklimax.com.br/" target="_blank" class="subtitle">Ver
+                        <div class="portfolio-card" id="home">
+                            <div class="portfolio-card-img portfolio-card-img05"></div>
+                            <div class="portfolio-card-info">
+                                <p class="portfolio-card-title">Landing Page</p>
+                                <a href="https://www.patricklimax.com.br/" target="_blank"
+                                    class="portfolio-card-subtitle">Ver
                                     Online</a>
                             </div>
                         </div>
                     </li>
                     <li class="item site">
-                        <div class="cardOne" id="home">
-                            <div class="card-img card-img06"></div>
-                            <div class="card-info">
-                                <p class="title-card">Landing Page</p>
-                                <a href="https://www.patricklimax.com.br/" target="_blank" class="subtitle">Ver
+                        <div class="portfolio-card" id="home">
+                            <div class="portfolio-card-img portfolio-card-img06"></div>
+                            <div class="portfolio-card-info">
+                                <p class="portfolio-card-title">Landing Page</p>
+                                <a href="https://www.patricklimax.com.br/" target="_blank"
+                                    class="portfolio-card-subtitle">Ver
                                     Online</a>
                             </div>
                         </div>
                     </li>
                     <li class="item landing">
-                        <div class="cardOne" id="home">
-                            <div class="card-img card-img07"></div>
-                            <div class="card-info">
-                                <p class="title-card">Landing Page</p>
-                                <a href="https://www.patricklimax.com.br/" target="_blank" class="subtitle">Ver
+                        <div class="portfolio-card" id="home">
+                            <div class="portfolio-card-img portfolio-card-img07"></div>
+                            <div class="portfolio-card-info">
+                                <p class="portfolio-card-title">Landing Page</p>
+                                <a href="https://www.patricklimax.com.br/" target="_blank"
+                                    class="portfolio-card-subtitle">Ver
                                     Online</a>
                             </div>
                         </div>
                     </li>
                     <li class="item site">
-                        <div class="cardOne" id="home">
-                            <div class="card-img card-img08"></div>
-                            <div class="card-info">
-                                <p class="title-card">Landing Page</p>
-                                <a href="https://www.patricklimax.com.br/" target="_blank" class="subtitle">Ver
+                        <div class="portfolio-card" id="home">
+                            <div class="portfolio-card-img portfolio-card-img08"></div>
+                            <div class="portfolio-card-info">
+                                <p class="portfolio-card-title">Landing Page</p>
+                                <a href="https://www.patricklimax.com.br/" target="_blank"
+                                    class="portfolio-card-subtitle">Ver
                                     Online</a>
                             </div>
                         </div>
                     </li>
                     <li class="item lojaVirtual">
-                        <div class="cardOne" id="home">
-                            <div class="card-img card-img09"></div>
-                            <div class="card-info">
-                                <p class="title-card">Landing Page</p>
-                                <a href="https://www.patricklimax.com.br/" target="_blank" class="subtitle">Ver
+                        <div class="portfolio-card" id="home">
+                            <div class="portfolio-card-img portfolio-card-img09"></div>
+                            <div class="portfolio-card-info">
+                                <p class="portfolio-card-title">Landing Page</p>
+                                <a href="https://www.patricklimax.com.br/" target="_blank"
+                                    class="portfolio-card-subtitle">Ver
                                     Online</a>
                             </div>
                         </div>
                     </li>
                 </ul>
                 <div class="efectScroll" style="margin-top:50px;">
-                    <a href="#contact" class="btn-user">
+                    <a href="#contact" class="btn-link">
                         <span class="btn-title">Ver Mais</span>
-                        <div class="topx"></div>
-                        <div class="leftx"></div>
-                        <div class="bottomx"></div>
-                        <div class="rightx"></div>
+                        <div class="btn-top"></div>
+                        <div class="btn-left"></div>
+                        <div class="btn-bottom"></div>
+                        <div class="btn-right"></div>
                     </a>
                 </div>
-
-                <!-- <div class="btn--default efectScroll" style="margin-top:20px">
-                    <a class="btn-default" href="#">Ver Mais</a>
-                </div> -->
-
             </div>
         </div>
     </section>
@@ -532,7 +351,7 @@
         <div class="max-width">
             <h2 class="title efectScroll">INVESTIMENTO</h2>
             <div class="price-content">
-                <div class="card-price efectScroll">
+                <div class="price-content-card efectScroll">
                     <h1>Landing <span>Page</span></h1>
                     <p>Para você que deseja vender seu produto e captar Leads.</p>
                     <ul class="list-price">
@@ -543,22 +362,22 @@
                         <li>Copywriting</li>
                         <li>Tecnologias modernas</li>
                     </ul>
-                    <div class="price-price">
+                    <div class="price-card">
                         <span class="priceOne">10x de</span>
                         <div class="priceTwo">R$ 55,00</div>
                         <p>ou <span class="priceThree">R$ 499,00</span> à vista</p>
                     </div>
                     <div class="price-btn" style="margin-top:50px;margin-bottom:20px;">
-                        <a href="#contact" class="btn-user">
+                        <a href="#contact" class="btn-link">
                             <span class="btn-title">Contratar</span>
-                            <div class="topx"></div>
-                            <div class="leftx"></div>
-                            <div class="bottomx"></div>
-                            <div class="rightx"></div>
+                            <div class="btn-top"></div>
+                            <div class="btn-left"></div>
+                            <div class="btn-bottom"></div>
+                            <div class="btn-right"></div>
                         </a>
                     </div>
                 </div>
-                <div class="card-price efectScroll">
+                <div class="price-content-card efectScroll">
                     <h1>Site <span>Institucional</span></h1>
                     <p>Para você que deseja vender seu produto e captar Leads.</p>
                     <ul class="list-price">
@@ -569,22 +388,22 @@
                         <li>Copywriting</li>
                         <li>Tecnologias modernas</li>
                     </ul>
-                    <div class="price-price">
+                    <div class="price-card">
                         <span class="priceOne">10x de</span>
                         <div class="priceTwo">R$ 139,90</div>
                         <p>ou <span class="priceThree">R$ 1.399,00</span> à vista</p>
                     </div>
                     <div class="price-btn" style="margin-top:50px;margin-bottom:20px;">
-                        <a href="#contact" class="btn-user">
+                        <a href="#contact" class="btn-link">
                             <span class="btn-title">Contratar</span>
-                            <div class="topx"></div>
-                            <div class="leftx"></div>
-                            <div class="bottomx"></div>
-                            <div class="rightx"></div>
+                            <div class="btn-top"></div>
+                            <div class="btn-left"></div>
+                            <div class="btn-bottom"></div>
+                            <div class="btn-right"></div>
                         </a>
                     </div>
                 </div>
-                <div class="card-price efectScroll">
+                <div class="price-content-card efectScroll">
                     <h1>Loja <span>Virtual</span></h1>
                     <p>Para você que deseja vender seu produto e captar Leads.</p>
                     <ul class="list-price">
@@ -595,18 +414,18 @@
                         <li>Copywriting</li>
                         <li>Tecnologias modernas</li>
                     </ul>
-                    <div class="price-price">
+                    <div class="price-card">
                         <span class="priceOne">Faça já um</span>
                         <div class="priceTwo">Orçamento</div>
                         <p><span class="priceThree">sem</span> compromisso</p>
                     </div>
                     <div class="price-btn" style="margin-top:50px;margin-bottom:20px;">
-                        <a href="#contact" class="btn-user">
+                        <a href="#contact" class="btn-link">
                             <span class="btn-title">Contratar</span>
-                            <div class="topx"></div>
-                            <div class="leftx"></div>
-                            <div class="bottomx"></div>
-                            <div class="rightx"></div>
+                            <div class="btn-top"></div>
+                            <div class="btn-left"></div>
+                            <div class="btn-bottom"></div>
+                            <div class="btn-right"></div>
                         </a>
                     </div>
                 </div>
@@ -627,13 +446,6 @@
                         café.</p>
 
                     <div class="icons">
-                        <!-- <div class="row">
-                            <ion-icon name="person-outline"></ion-icon>
-                            <div class="info">
-                                <div class="head">Nome</div>
-                                <div class="sub-title">Patrick Lima</div>
-                            </div>
-                        </div> -->
                         <div class="row">
                             <ion-icon name="earth-outline"></ion-icon>
                             <div class="info">
@@ -641,13 +453,6 @@
                                 <div class="sub-title">Rua Mitras, Jardim Renascença, São Luís (MA)</div>
                             </div>
                         </div>
-                        <!-- <div class="row">
-                            <ion-icon name="person-outline"></ion-icon>
-                            <div class="info">
-                                <div class="head">Email</div>
-                                <div class="sub-title">contato@fullcode.dev.br</div>
-                            </div>
-                        </div> -->
                     </div>
                 </div>
                 <!--column left-->
@@ -676,20 +481,16 @@
                             </div>
                             <div class="button">
                                 <input type="hidden" name="_next" value="https://www.patricklimax.com.br/thanks.html">
-                                <!-- <div class="btn--default">
-                                    <button class="btn-default" type="submit">Enviar</button>
-                                </div> -->
 
                                 <div class="efectScroll">
-                                    <button href="" class="btn-user" type="submit">
+                                    <button href="" class="btn-link" type="submit">
                                         <span class="btn-title">Enviar</span>
-                                        <div class="topx"></div>
-                                        <div class="leftx"></div>
-                                        <div class="bottomx"></div>
-                                        <div class="rightx"></div>
+                                        <div class="btn-top"></div>
+                                        <div class="btn-left"></div>
+                                        <div class="btn-bottom"></div>
+                                        <div class="btn-right"></div>
                                     </button>
                                 </div>
-
                             </div>
                         </div>
                     </form>
@@ -700,48 +501,8 @@
     <!--fim section contato-->
     <!--section  footer-->
     <footer class="footer">
-        <div class="logo efectScroll">
-            <img src="assets/images/about/patricklimalogo.png" alt="Logo da Empresa Patrick Lima">
-            <!-- <a href="#home">
-                <svg class="logo_svg" style="width:80px;" version="1.0" xmlns="http://www.w3.org/2000/svg"
-                    width="512.000000pt" height="390.000000pt" viewBox="0 0 512.000000 390.000000"
-                    preserveAspectRatio="xMidYMid meet">
-                    <defs>
-                        <linearGradient id="grad11" x1="40%" y1="0%" x2="100%" y2="0%">
-                            <stop offset="0%" style="stop-color:#fff;stop-opacity:1" />
-                            <stop offset="100%" style="stop-color:#10B083;stop-opacity:1" />
-                        </linearGradient>
-                    </defs>
-
-                    <defs>
-                        <linearGradient id="grad22" x1="0%" y1="0%" x2="100%" y2="0%">
-                            <stop offset="0%" style="stop-color:#10B083;stop-opacity:1" />
-                            <stop offset="100%" style="stop-color:#10B083;stop-opacity:1" />
-                        </linearGradient>
-                    </defs>
-
-                    <defs>
-                        <linearGradient id="grad33" x1="0%" y1="0%" x2="100%" y2="0%">
-                            <stop offset="50%" style="stop-color:#fff;stop-opacity:1" />
-                            <stop offset="100%" style="stop-color:#10B083;stop-opacity:1" />
-                        </linearGradient>
-                    </defs>
-
-                    <g transform="translate(0.000000,390.000000) scale(0.100000,-0.100000)" stroke="none">
-                        <path fill="url(#grad33)"
-                            d="M4107 3838 c-73 -99 -2177 -3210 -2177 -3219 0 -7 9 -9 23 -5 12 3 420 6 907 6 l885 0 158 210 c86 116 156 211 155 212 -2 1 -270 5 -595 8 l-593 5 940 1398 c517 768 940 1402 940 1407 0 6 -113 10 -309 10 l-310 0 -24 -32z" />
-
-                        <path fill="url(#grad22)"
-                            d="M4389 3135 c-35 -54 -118 -184 -185 -288 l-121 -188 98 -306 c54 -169 95 -312 91 -317 -6 -11 -680 -844 -710 -878 -14 -17 -1 -18 270 -18 l284 0 359 422 c197 233 358 430 358 438 -2 17 -358 1183 -372 1215 -7 17 -17 6 -72 -80z" />
-
-                        <path fill="url(#grad33)"
-                            d="M795 2600 c-280 -343 -514 -629 -518 -637 -6 -9 280 -1171 329 -1335 5 -16 19 -18 112 -18 59 0 136 3 172 6 l65 7 135 193 c74 107 142 204 150 215 l14 22 -132 -5 c-73 -3 -132 -2 -132 0 0 3 -34 203 -76 444 -65 378 -73 440 -62 457 8 11 176 218 373 460 l360 440 451 1 450 0 121 180 121 180 -533 0 c-292 0 -612 3 -711 6 l-179 6 -510 -622z" />
-
-                        <path fill="url(#grad22)"
-                            d="M1894 1748 c-549 -804 -1038 -1520 -1086 -1590 l-87 -128 317 2 317 3 1082 1585 c596 872 1083 1586 1083 1588 0 1 -141 2 -314 2 l-313 0 -999 -1462z" />
-                    </g>
-                </svg>
-            </a> -->
+        <div class="logotipo efectScroll">
+            <img src="assets/images/logotipo/png.png" alt="Logo da Empresa Patrick Lima">
         </div>
         <div class="footer-text efectScroll">
             <span>Desenvolvido por
@@ -777,13 +538,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"> -->
 
-
-
     <!-- <script src="https://code.jquery.com/jquery-3.5.1.js"></script> -->
-
-    <script>
-
-    </script>
 
 </body>
 
