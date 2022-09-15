@@ -93,7 +93,8 @@ html {
     height: 100px;
     display: flex;
     justify-content: center;
-    background: var(--black);
+    background: radial-gradient(#191919, #000);
+    /* background: var(--black); */
     position: fixed;
     z-index: 999;
     padding: 10px 0;
@@ -184,6 +185,8 @@ html {
 
 /* menu */
 #nav a {
+    width: 84px;
+    text-align: center;
     color: var(--white);
     text-decoration: none;
     text-transform: uppercase;
