@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+:root {
+    --green: #10B083;
+    --grey: #DBDBDB;
+    --white: #ffffff;
+    --black: #000000;
+    --DarkOne: #1B1920;
+    --DarkTwo: #1F1F23;
+
+
+    --greenday: #01E869;
+    --greenTwo: #2FD46C;
+    --greenThree: #4DBD82;
+    --DarkTwo1: #222027;
+}
+
+section {
+    height: 100vh;
+    padding: 110px 10px 50px 10px;
+}
+
+section div {
+    height: 100%;
+}
+
+section .dark {
+    background-color: #000;
+    color: #fff;
+}
+
+section h1 {
+    text-align: center;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(#191919, #000);
+    position: fixed;
+    z-index: 999;
+    padding: 10px 0;
+    transition: all 0.3s linear;
+}
+
+.menu-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    max-width: 1100px;
+    padding: 0 15px;
+}
+
+.logotipo {
+    width: 50px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logotipo img {
+    width: 35px;
+    height: 58px;
+    transition: all 0.6s ease;
+}
+
+.logotipo img:hover {
+    transform: scale(1.2);
+}
+
+.navigation {
+    /* width: 100%; */
+    height: 100%;
+    /* position: fixed; */
+    /* top: 200px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation ul {
+    display: flex;
+    column-gap: 20px;
+    /* width: 350px; */
+}
+
+.navigation ul li {
+    position: relative;
+    list-style: none;
+    width: 60px;
+    height: 60px;
+    z-index: 1;
+}
+
+.navigation ul li a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+
+.navigation ul li a .icon {
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 1.5em;
+    text-align: center;
+    transition: 0.5s;
+    color: #10B083;
+}
+
+.navigation ul li.active a .icon {
+    transform: translateY(25px);
+}
+
+.navigation ul li a .text {
+    position: absolute;
+    color: #10B083;
+    font-weight: 600;
+    font-size: 0.80em;
+    letter-spacing: 0.07em;
+    transition: 0.5s;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.navigation ul li.active a .text {
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+.indicator {
+    position: absolute;
+    top: 50%;
+    width: 60px;
+    height: 60px;
+    background: #000;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    transition: 0.5s;
+}
+
+/* .indicator::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-right-radius: 20px;
+    box-shadow: 1px -10px 0 0 #fff;
+}
+
+.indicator::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -22px;
+    width: 20px;
+    height: 20px;
+    background: transparent;
+    border-top-left-radius: 20px;
+    box-shadow: -1px -10px 0 0 #fff;
+} */
+
+.navigation ul li:nth-child(1).active~.indicator {
+    transform: translateX(calc(80px * 0));
+}
+
+.navigation ul li:nth-child(2).active~.indicator {
+    transform: translateX(calc(80px * 1));
+}
+
+.navigation ul li:nth-child(3).active~.indicator {
+    transform: translateX(calc(80px * 2));
+}
+
+.navigation ul li:nth-child(4).active~.indicator {
+    transform: translateX(calc(80px * 3));
+}
+
+.navigation ul li:nth-child(5).active~.indicator {
+    transform: translateX(calc(80px * 4));
+}
+
+.navigation ul li:nth-child(6).active~.indicator {
+    transform: translateX(calc(80px * 5));
+}
+
+/* button default */
+.btn-link {
+    padding: 12px;
+    border: none;
+    font-size: 15px;
+    position: relative;
+    overflow: hidden;
+    transition: 300ms;
+    text-decoration: none;
+    background: transparent;
+}
+
+.btn-link .btn-title {
+    color: var(--green);
+    position: relative;
+    transition: 300ms;
+    transition-delay: 300ms;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.btn-link:before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    left: 50%;
+    right: 50%;
+    top: 50%;
+    bottom: 50%;
+    transition: 0.8s;
+    transition-delay: 0.3s;
+    background: var(--green);
+}
+
+.btn-link div {
+    transition: 300ms;
+    position: absolute;
+    background: var(--green);
+}
+
+.btn-link .btn-top {
+    width: 15px;
+    height: 2px;
+    top: 0;
+    left: 0;
+}
+
+.btn-link .btn-bottom {
+    width: 15px;
+    height: 2px;
+    bottom: 0;
+    right: 0;
+}
+
+.btn-link .btn-left {
+    width: 2px;
+    height: 15px;
+    top: 0;
+    left: 0;
+}
+
+.btn-link .btn-right {
+    width: 2px;
+    height: 15px;
+    bottom: 0;
+    right: 0;
+}
+
+.btn-link:hover .btn-title {
+    color: var(--white);
+    text-shadow: 0 0 4px var(--DarkOne);
+}
+
+.btn-link:hover:before {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.btn-link:hover .btn-top,
+.btn-link:hover .btn-bottom {
+    width: 100%;
+}
+
+.btn-link:hover .btn-left,
+.btn-link:hover .btn-right {
+    height: 100%;
+}
+
+
+
+@media (max-width:799px) {
+    .menu-bar {
+        justify-content: center;
+        column-gap: 10px;
+    }
+
+    .navigation ul {
+        column-gap: 0px;
+    }
+
+    .navigation ul li a .text {
+        font-size: 0.75em;
+    }
+
+    .navigation ul li:nth-child(1).active~.indicator {
+        transform: translateX(calc(60px * 0));
+    }
+
+    .navigation ul li:nth-child(2).active~.indicator {
+        transform: translateX(calc(60px * 1));
+    }
+
+    .navigation ul li:nth-child(3).active~.indicator {
+        transform: translateX(calc(60px * 2));
+    }
+
+    .navigation ul li:nth-child(4).active~.indicator {
+        transform: translateX(calc(60px * 3));
+    }
+
+    .navigation ul li:nth-child(5).active~.indicator {
+        transform: translateX(calc(60px * 4));
+    }
+
+    .navigation ul li:nth-child(6).active~.indicator {
+        transform: translateX(calc(60px * 5));
+    }
+
+}
+
+@media (max-width:600px) {
+    .button-on {
+        display: none;
+    }
+}
+
+@media (max-width:500px) {
+    .logotipo img {
+        width: 25px;
+        height: 45px;
+    }
+}
+
+@media (max-width:390px) {
+    .logotipo {
+        display: none;
+    }
+}
