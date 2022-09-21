@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .container {
     color: #fff;
     background:url('bg-bg.jpg') no-repeat center/cover;
@@ -9,9 +15,9 @@
 
 .container-content {
     background: rgba(0, 0, 0, .3);
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(3px);
     width: 98%;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 40px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,24 +35,6 @@
     height: 58px;
 }
 
-.text-content-up {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.text-content-up .text-1 {
-    color: #fff;
-    text-shadow: 1px 1px 0px #000;
-    font-size: 1.5rem;
-    font-family: 'Major Mono Display', monospace;
-}
-
-.text-content-up .text-bar {
-    height: 12px;
-    width: 37%;
-    background: #fff;
-}
 
 .text-content-center .text-2 {
     font-size: 3.75rem;
