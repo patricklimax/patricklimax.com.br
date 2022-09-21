@@ -75,7 +75,7 @@
     --green: #10B083;
     --grey: #DBDBDB;
     --gre01: #888888;
-    --white: #ffffff;
+    --white: #e1e1e6fff;
     --black: #000000;
 
 
@@ -142,7 +142,7 @@ html {
 
 #nav a {
     text-align: center;
-    color: var(--white);
+    color: #e1e1e6;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 14px;
@@ -243,7 +243,7 @@ html {
 }
 
 .btn-link:hover .btn-title {
-    color: var(--white);
+    color: #e1e1e6;
     text-shadow: 0 0 4px var(--DarkOne);
 }
 
@@ -288,7 +288,7 @@ section .title {
     margin-bottom: 1.5rem;
     padding-bottom: 1.8rem;
     position: relative;
-    color: var(--white);
+    color: #e1e1e6;
 }
 
 section .title::after {
@@ -312,7 +312,7 @@ section .title::after {
 .bg-blur {
     background-color: rgba(0, 0, 0, 0.8);
     height: 100%;
-    padding: 110px 0 10px 0;
+    padding: 90px 0 10px 0;
 }
 
 .about .about-content,
@@ -343,7 +343,7 @@ section .title::after {
 }
 
 .text-content-up .text-1 {
-    color: var(--white);
+    color: #e1e1e6;
     text-shadow: 1px 1px 0px #000;
     font-size: 1.5rem;
     font-family: 'Major Mono Display', monospace;
@@ -352,7 +352,7 @@ section .title::after {
 .text-content-up .text-bar {
     height: 10px;
     width: 37%;
-    background: var(--white);
+    background: #e1e1e6;
 }
 
 .text-content-center .text-2 {
@@ -371,11 +371,11 @@ section .title::after {
 }
 
 .text-content-center .text-3 span {
-    color: var(--white);
+    color: #e1e1e6;
 }
 
 .text-content-down {
-    color: var(--white);
+    color: #e1e1e6;
     display: flex;
     justify-content: center;
     padding: 60px 0;
@@ -385,7 +385,7 @@ section .title::after {
     text-decoration: none;
     font-size: 10px;
     font-weight: 500;
-    color: #fff;
+    color: #e1e1e6;
     animation: scrollMove 1.5s infinite ease-in alternate;
 }
 
@@ -474,7 +474,7 @@ section .title::after {
 .about .about-content .right .text {
     font-size: 25px;
     margin-bottom: 10px;
-    color: var(--white);
+    color: #e1e1e6;
 }
 
 .about .about-content .right .text span {
@@ -484,7 +484,7 @@ section .title::after {
 .about .about-content .right p {
     text-align: justify;
     font-size: 15px;
-    color: var(--white);
+    color: #e1e1e6;
 }
 
 .about .about-content .left img {
@@ -527,13 +527,13 @@ section .title::after {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    color: #fff;
+    color: #e1e1e6;
     transition: all 0.7s ease-in-out;
 
 }
 
 .solution-card-text h1 {
-    color: var(--white);
+    color: #e1e1e6;
     text-shadow: 1px 1px 0px #000;
 }
 
@@ -551,15 +551,15 @@ section .title::after {
 }
 
 .solution-card.one {
-    background-image: url('assets/images/services/goran-ivos.webp');
+    background-image: url('assets/images/solution/solut01.jpg');
 }
 
 .solution-card.two {
-    background-image: url('assets/images/services/ben-kolde.webp');
+    background-image: url('assets/images/solution/solut02.jpg');
 }
 
 .solution-card.three {
-    background-image: url('assets/images/services/john-schnobrich.webp');
+    background-image: url('assets/images/solution/solut03.jpg');
 }
 
 /* beneficios */
@@ -584,7 +584,7 @@ section .title::after {
     gap: 10px;
     align-items: center;
     padding: 10px 5px;
-    color: var(--white);
+    color: #e1e1e6;
 }
 
 .area-benefit .card-benefit .iconb {
@@ -732,7 +732,7 @@ section .title::after {
 
 .active,
 .dot:hover {
-    background-color: #fff;
+    background-color: #e1e1e6;
 }
 
 /* Fading animation */
@@ -752,8 +752,8 @@ section .title::after {
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    background: #0c0c0c;
-    color: var(--white);
+    background: rgba(0, 0, 0, 0.2);
+    color: #e1e1e6;
     gap: 20px;
     list-style-position: inside;
 }
@@ -764,8 +764,9 @@ section .title::after {
 
 .price-content-card h1 {
     font-size: 1.5em;
-    line-height: 30px;
+    line-height: 1.8rem;
     text-align: center;
+    letter-spacing: 0.1rem;
 }
 
 .price-content-card h1 span {
@@ -779,17 +780,22 @@ section .title::after {
 
 .price-content-card .price-btn {
     align-self: center;
+    margin: 30px 0 20px 0;
 }
 
+
 .list-price li {
-    color: var(--green);
+    color: #e1e1e6;
     list-style-type: circle;
     font-size: 0.9rem;
-    line-height: 40px;
+    line-height: 2.25rem;
+}
+.list-price li::marker {
+    color: var(--green);
 }
 
 .price-card {
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .price-card .priceOne {
@@ -826,7 +832,7 @@ section .title::after {
 
 .contact .contact-content .column {
     width: calc(50% - 30px);
-    color: var(--white);
+    color: #e1e1e6;
 }
 
 .contact .contact-content {
@@ -835,7 +841,7 @@ section .title::after {
 
 .contact .contact-content .left p {
     text-align: justify;
-    color: var(--white);
+    color: #e1e1e6;
 }
 
 .contact .contact-content .text {
@@ -858,7 +864,7 @@ section .title::after {
 }
 
 .contact .contact-content .row .info .sub-title {
-    color: var(--white);
+    color: #e1e1e6;
 }
 
 .contact .contact-content .row ion-icon {
@@ -939,7 +945,7 @@ section .title::after {
 
 .footer span,
 .footer .copy {
-    color: var(--white);
+    color: #e1e1e6;
     /* margin: 10px 0 0 0; */
     font-size: 15px;
     display: flex;
@@ -978,7 +984,7 @@ section .title::after {
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s ease;
-    background: linear-gradient(#222, #000);
+    background: linear-gradient(#191919, #000);
 }
 
 .scroll-up-btn .up {
@@ -1084,7 +1090,7 @@ section .title::after {
         text-align: center;
         padding: 1rem 0;
         margin: 0 1rem;
-        border-bottom: 1px solid #fff;
+        border-bottom: 1px solid #e1e1e6;
     }
 
     #btn-mobile {
