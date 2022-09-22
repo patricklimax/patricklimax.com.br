@@ -19,7 +19,7 @@ function toggleMenu(event) {
 }
 
 btnMobile.addEventListener("click", toggleMenu);
-btnMobile.addEventListener("touchstart", toggleMenu);
+btnMobile.addEventListener("touchstart", toggleMenu, {passive: true});
 
 // fim js menu mobile
 
@@ -43,7 +43,7 @@ $(document).ready(function () {
   });
 
   var typed = new Typed(".typing", {
-    strings: ["dEsENVOLVEDoR WeB"],
+    strings: ["DESENVOLVEDOR WEB"],
     typeSpeed: 100,
     backSpeed: 60,
     loop: true,

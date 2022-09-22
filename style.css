@@ -1,8 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,800&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
-@keyframes mousemove {
 
+@font-face {
+    font-family: font-major;
+    src: url(assets/images/fonts/MajorMonoDisplay-Regular.ttf)
+}
+
+@font-face {
+    font-family: font-poppins;
+    src: url(assets/images/fonts/Poppins-Regular.ttf)
+}
+
+@keyframes mousemove {
     /*animação mousemove home*/
     0% {
         transform: translateY(-2px);
@@ -106,6 +116,7 @@ html {
     padding: 10px 0px;
     transition: all 0.3s linear;
     background-color: #000;
+    font-family: font-poppins, monospace;
 }
 
 .header.sticky {
@@ -150,7 +161,6 @@ html {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 14px;
-    font-family: 'Poppins', sans-serif;
     font-weight: 600;
     transition: all 0.5s ease-in;
     border-bottom: 2px solid #191919;
@@ -276,12 +286,11 @@ html {
 
 /* códigos gerais */
 section {
-    font-family: 'Poppins', sans-serif;
     background: url('assets/images/home/bg-sec.webp') no-repeat center/cover fixed;
 }
 
 section .title {
-    font-family: 'Major Mono Display', monospace;
+    font-family: font-major, monospace;
     text-align: center;
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
@@ -306,6 +315,7 @@ section .title::after {
     max-width: 1100px;
     margin: auto;
     padding: 0 10px 50px 10px;
+    font-family: font-poppins, monospace;
 }
 
 .bg-blur {
@@ -345,7 +355,7 @@ section .title::after {
     color: #e1e1e6;
     text-shadow: 1px 1px 0px #000;
     font-size: 1.5rem;
-    font-family: 'Major Mono Display', monospace;
+    font-family: font-major, monospace;
 }
 
 .text-content-up .text-bar {
@@ -359,14 +369,14 @@ section .title::after {
     line-height: 4rem;
     color: var(--green);
     text-shadow: 5px 5px 0px #000;
-    font-family: 'Major Mono Display', monospace;
+    font-family: font-major, monospace;
 }
 
 .text-content-center .text-3 {
     font-size: 1.6rem;
     line-height: 5.7rem;
     text-shadow: 2px 2px 0px #000;
-    font-family: 'Major Mono Display', monospace;
+    font-family: font-major, monospace;
 }
 
 .text-content-center .text-3 span {
@@ -391,7 +401,6 @@ section .title::after {
 .scroll-down p {
     transform: rotate(-270deg);
     letter-spacing: 1px;
-    font-family: 'Poppins', sans-serif;
 }
 
 /* media-social */
@@ -568,9 +577,8 @@ section .title::after {
 }
 
 /* beneficios */
-.area-benefit {
-    font-family: 'Poppins', sans-serif;
-}
+/* .area-benefit {
+} */
 
 .area-benefit {
     display: flex;
@@ -924,7 +932,6 @@ section .title::after {
     outline: none;
     padding: 0 15px;
     font-size: 17px;
-    font-family: 'Poppins', sans-serif;
 }
 
 .contact .rigth form .name {
