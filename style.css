@@ -77,7 +77,7 @@
     --gre01: #888888;
     --white: #e1e1e6fff;
     --black: #000000;
-    --bluedark: #131E2F
+    --bluedark: #131E2F;
 
     --greenday: #01E869;
     --greenTwo: #2FD46C;
@@ -139,6 +139,9 @@ html {
 }
 
 /* menu */
+#nav {
+    background-color: transparent;
+}
 
 #nav a {
     text-align: center;
@@ -962,7 +965,6 @@ section .title::after {
 .footer span,
 .footer .copy {
     color: #e1e1e6;
-    /* margin: 10px 0 0 0; */
     font-size: 15px;
     display: flex;
     align-items: center;
@@ -1085,10 +1087,11 @@ section .title::after {
     .menu {
         display: block;
         position: absolute;
-        width: 100%;
+        width: 60%;
         top: 90px;
         right: 0px;
-        background: linear-gradient(to right, var(--black), var(--green));
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(5px);
         transition: 0.6s;
         z-index: 99000;
         height: 0px;
@@ -1102,11 +1105,22 @@ section .title::after {
         overflow-y: auto;
     }
 
+    .header.sticky {
+        padding: 50px 0 30px 0;
+    }
+
     .menu a {
         text-align: center;
         padding: 1rem 0;
         margin: 0 1rem;
         border-bottom: 1px solid #e1e1e6;
+    }
+
+    #nav a {
+        font-size: 20px;
+        border-bottom: none;
+        line-height: 30px;
+        letter-spacing: 3px;
     }
 
     #btn-mobile {
@@ -1234,31 +1248,19 @@ section .title::after {
 }
 
 
-/* ::-webkit-scrollbar {
-    background: #01A5B1;
-} */
-
 body::-webkit-scrollbar {
     width: 12px;
-    /*largura do scroll*/
 }
 
 body::-webkit-scrollbar-track {
     background: var(--black);
-    /* cor do background */
 }
 
 body::-webkit-scrollbar-thumb {
     background: var(--green);
-    /* cor do thumb */
     border-radius: 20px;
     border: 3px solid var(--black);
 }
-
-/* animação ScrollReveal */
-/* .efectScroll {
-    visibility: hidden;
-} */
 
 
 /* novo .portfolio */
