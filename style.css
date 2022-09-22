@@ -129,13 +129,13 @@ html {
 }
 
 .logotipo img {
-    width: 35px;
-    height: 58px;
+    width: 29px;
+    height: 50px;
     transition: all 0.6s ease;
 }
 
 .logotipo img:hover {
-    transform: scale(1.2);
+    transform: scale(1.15);
 }
 
 /* menu */
@@ -785,7 +785,7 @@ section .title::after {
     font-size: 1.5em;
     line-height: 1.8rem;
     text-align: center;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.2rem;
 }
 
 .price-content-card h1 span {
@@ -820,14 +820,14 @@ section .title::after {
 .price-card .priceOne {
     font-size: 20px;
     font-weight: 600;
-    line-height: 30px;
+    line-height: 25px;
 }
 
 .price-card .priceTwo {
-    font-size: 1.9rem;
+    font-size: 1.7rem;
     text-align: center;
     font-weight: 600;
-    line-height: 60px;
+    line-height: 50px;
     color: var(--green);
 }
 
@@ -962,14 +962,19 @@ section .title::after {
     align-items: center;
 }
 
+.footer span {
+    font-weight: 600;
+}
+
 .footer span,
 .footer .copy {
     color: #e1e1e6;
-    font-size: 15px;
+    font-size: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
     column-gap: 5px;
+    letter-spacing: 1px;
 }
 
 .footer span a {
@@ -1185,13 +1190,21 @@ section .title::after {
 }
 
 @media (max-width: 690px) {
-
+    .home-content{
+        justify-content: center;
+        align-items: center;
+    }
     .solution-card {
         width: 100%;
+        margin-bottom: 15px;
     }
 
     .solution-card-text {
         width: 100%;
+    }
+
+    .area-benefit .card-benefit {
+        width: 45%;
     }
 
     .price-content-card {
