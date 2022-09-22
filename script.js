@@ -18,8 +18,8 @@ function toggleMenu(event) {
   }
 }
 
-btnMobile.addEventListener("click", toggleMenu);
-btnMobile.addEventListener("touchstart", toggleMenu, {passive: true});
+btnMobile.addEventListener("click", toggleMenu, { passive: true });
+btnMobile.addEventListener("touchstart", toggleMenu, { passive: true });
 
 // fim js menu mobile
 
@@ -30,14 +30,14 @@ $(document).ready(function () {
     } else {
       $(".header").removeClass("sticky");
     }
-    
+
     if (this.scrollY > 300) {
       $(".scroll-up-btn").addClass("show");
     } else {
       $(".scroll-up-btn").removeClass("show");
     }
   });
-  
+
   $(".scroll-up-btn").click(function () {
     $("html").animate({ scrollTop: 0 });
   });
