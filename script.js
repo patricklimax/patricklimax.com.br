@@ -3,6 +3,7 @@ const btnMobile = document.getElementById("btn-mobile");
 
 function toggleMenu(event) {
   if (event.type === "touchstart") event.preventDefault();
+
   const nav = document.getElementById("nav");
 
   nav.classList.toggle("active");
@@ -20,6 +21,7 @@ function toggleMenu(event) {
 
 btnMobile.addEventListener("click", toggleMenu, { passive: true });
 btnMobile.addEventListener("touchstart", toggleMenu);
+
 
 // fim js menu mobile
 
@@ -54,67 +56,4 @@ $(document).ready(function () {
     backSpeed: 60,
     loop: true,
   });
-
-  // $(".menu-btn").click(function () {
-  //   $(".navbar .menu").toggleClass("active");
-  //   $(".menu-btn i").toggleClass("active");
-  // });
-  // $('.carousel').owlCarousel({
-  //     margin:20,
-  //     loop:true,
-  //     autoplayTimeOut:2000,
-  //     autoplayHoverPauser:true,
-  //     responsive:{
-  //         0:{
-  //             items:1,
-  //             nav:false
-  //         },
-  //         600:{
-  //             items:2,
-  //             nav:false
-  //         },
-  //         1000:{
-  //             items:3,
-  //             nav:false
-  //         }
-  //     }
-  // });
 });
-
-// ScrollReveal
-// window.sr = ScrollReveal({ reset: true });
-// ScrollReveal().reveal(".efectScroll", {
-//   delay: 200,
-//   rotate: {
-//     x: 100,
-//     y: 0,
-//     z: 0,
-//   },
-// });
-
-// filter portfolio
-// $(document).ready(function () {
-//     $(".portfolio-content-filter .item").click(function () {
-//         $(this).addClass("active").siblings().removeClass("active");
-
-//         $(".itens").fadeOut();
-//         setTimeout(function () {
-//             $(".itens").fadeIn();
-//         }, 400);
-
-//         let value = $(this).attr("data-filter");
-
-//         setTimeout(function () {
-//             if (value === "all") {
-//                 $(".itens .item").show("500");
-//             } else {
-//                 $(".itens .item")
-//                     .not("." + value)
-//                     .hide("500");
-//                 $(".itens .item")
-//                     .filter("." + value)
-//                     .show("500");
-//             }
-//         }, 100);
-//     });
-// });
