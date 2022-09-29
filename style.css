@@ -1220,6 +1220,10 @@ section .title::after {
         height: 50%;
     }
 
+    .text-content-up {
+        margin-top: 50%;
+    }
+
     .text-content-center .text-2 {
         font-size: 2.55rem;
     }
@@ -1234,10 +1238,6 @@ section .title::after {
 @media (max-width: 500px) {
     .max-width {
         width: 100%;
-    }
-
-    .text-content-up {
-        margin-top: 50%;
     }
 
     .text-content-center .text-2 {
