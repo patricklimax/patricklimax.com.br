@@ -650,6 +650,12 @@ section .title::after {
     background-position: top;
 }
 
+#img07 {
+    background: url('assets/images/portfolio/cardvirtual.webp') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .prev,
 .next {
     cursor: pointer;
