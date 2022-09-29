@@ -411,15 +411,14 @@ section .title::after {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: 32px;
     text-decoration: none;
     border-radius: 15%;
     outline: 2px solid transparent;
     background: #191919;
     transition: all .5s;
 }
-
 
 .media-social .icon:hover {
     outline-offset: 4px;
@@ -437,6 +436,11 @@ section .title::after {
 
 .media-social .icon:hover .ico {
     animation: shake .5s;
+}
+
+.media-social .icon span{
+    position: absolute;
+    color: transparent;
 }
 
 /* .media-social .icon--instagram:hover {
@@ -1180,8 +1184,14 @@ section .title::after {
 
 @media (max-width: 690px) {
     .home-content {
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+
+    .home-content .text-bar {
+        display: none;
     }
 
     .area-solution {
