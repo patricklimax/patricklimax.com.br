@@ -19,7 +19,7 @@ function toggleMenu(event) {
 }
 
 btnMobile.addEventListener("click", toggleMenu, { passive: true });
-btnMobile.addEventListener("touchstart", toggleMenu, { passive: true });
+btnMobile.addEventListener("touchstart", toggleMenu);
 
 // fim js menu mobile
 
